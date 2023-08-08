@@ -1,0 +1,129 @@
+{
+  "data": {
+    "setting": {
+      "data": {
+        "id": "1",
+        "attributes": {
+          "blogName": "Tecnologia",
+          "blogDescription": "tecnologia em geral",
+          "logo": {
+            "data": []
+          },
+          "menuLink": [
+            {
+              "id": "1",
+              "link": "#",
+              "text": "desenvolvimento web",
+              "newTab": false
+            }
+          ],
+          "footerText": "Projeto criado por Erick Staviasz"
+        }
+      }
+    },
+    "posts": {
+      "data": [
+        {
+          "id": "1",
+          "attributes": {
+            "slug": "desenvolvimento-web",
+            "title": "desenvolvimento web",
+            "excerpt": "As varias areas de desenvolvimento web",
+            "content": "Front End:\nA área de front end é responsável pela parte visual e interativa de um site ou aplicação web. Os desenvolvedores front end trabalham com linguagens de marcação (HTML), estilização (CSS) e programação (JavaScript) para criar interfaces de usuário atraentes e responsivas. Eles se concentram em garantir que a experiência do usuário seja intuitiva e agradável, trabalhando na aparência e na interatividade dos elementos visíveis na tela.\n\nBack End:\nA área de back end lida com a lógica e a funcionalidade que acontecem por trás das cenas de um site ou aplicação web. Os desenvolvedores back end trabalham com linguagens de programação como Python, Java, PHP, Ruby, entre outras, para construir servidores, bancos de dados e APIs. Eles se concentram na gestão de dados, na segurança, na autenticação de usuários, na lógica de negócios e em outras funcionalidades que não são visíveis diretamente aos usuários.\n\nDevOps:\nDevOps é uma abordagem que combina práticas de desenvolvimento de software (Dev) com operações de infraestrutura e implantação (Ops). Os profissionais de DevOps são responsáveis por automatizar processos, implementar integração contínua e implantação contínua (CI/CD), gerenciar ambientes de infraestrutura, monitorar sistemas e garantir a disponibilidade e confiabilidade de aplicações. Eles desempenham um papel crucial na colaboração entre desenvolvedores e equipes de operações para criar um fluxo de trabalho eficiente.\n\nFull Stack:\nDesenvolvedores full stack têm habilidades tanto de front end quanto de back end, o que significa que são capazes de trabalhar em todas as partes de uma aplicação web, desde a interface do usuário até o servidor e o banco de dados. Eles têm uma visão mais ampla do desenvolvimento e podem lidar com diversos aspectos de um projeto. Desenvolvedores full stack podem projetar e construir uma aplicação completa, o que os torna versáteis e valiosos para projetos de diferentes tamanhos.\n\nCada uma dessas áreas desempenha um papel crucial no desenvolvimento de aplicações web de sucesso. A colaboração entre desenvolvedores de diferentes áreas é fundamental para criar produtos de alta qualidade que sejam visualmente atraentes, funcionais, seguros e confiáveis.",
+            "allowComments": false,
+            "cover": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "altText": null,
+                  "url": "https://res.cloudinary.com/drko8mcj9/image/upload/v1691449461/photo_1498050108023_c5249f4df085_df84325049.webp"
+                }
+              }
+            },
+            "categories": {
+              "data": [
+                {
+                  "attributes": {
+                    "displayName": "javaScript",
+                    "slug": "java-script"
+                  }
+                },
+                {
+                  "attributes": {
+                    "displayName": "desenvolvimento",
+                    "slug": "desenvolvimento"
+                  }
+                }
+              ]
+            },
+            "tags": {
+              "data": [
+                {
+                  "attributes": {
+                    "displayName": "javaScript",
+                    "slug": "tag-java-script"
+                  }
+                },
+                {
+                  "attributes": {
+                    "displayName": "python",
+                    "slug": "tag-python"
+                  }
+                }
+              ]
+            },
+            "author": {
+              "data": {
+                "attributes": {
+                  "displayName": "Erick Staviasz",
+                  "slug": "erick-staviasz"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "2",
+          "attributes": {
+            "slug": "senioridade",
+            "title": "Junior, pleno e senior",
+            "excerpt": "Senioridade em desenvolvimento de sofware junior, pleno e senior",
+            "content": "Desenvolvedor Júnior:\n\nOs desenvolvedores juniores estão nos estágios iniciais de suas carreiras e têm um conhecimento básico das tecnologias e ferramentas relevantes para o desenvolvimento de sistemas.\nEles geralmente trabalham em tarefas mais simples e supervisionadas, como implementar funcionalidades específicas ou corrigir bugs.\nOs desenvolvedores juniores precisam estar dispostos a aprender e aprimorar suas habilidades constantemente, já que estão construindo sua base técnica e experiência profissional.\nEm geral, eles contribuem para projetos maiores como membros da equipe, sob a orientação de desenvolvedores mais experientes.\nDesenvolvedor Pleno:\n\nOs desenvolvedores plenos têm mais experiência e habilidades consolidadas em comparação com os juniores.\nEles são capazes de trabalhar em projetos mais complexos com menos supervisão e têm um entendimento mais profundo das tecnologias usadas.\nDesenvolvedores plenos frequentemente participam da definição da arquitetura do software, tomam decisões técnicas e ajudam a resolver desafios técnicos.\nEles podem desempenhar um papel importante na orientação de desenvolvedores juniores, compartilhando conhecimentos e melhores práticas.\nDesenvolvedor Sênior:\n\nOs desenvolvedores seniores têm um nível avançado de experiência e conhecimento técnico, geralmente acumulados ao longo de vários anos de prática.\nEles são capazes de liderar projetos, definir arquiteturas robustas e tomar decisões críticas sobre design e tecnologia.\nDesenvolvedores seniores frequentemente são consultados para resolver problemas complexos e têm a capacidade de encontrar soluções criativas e eficientes.\nEles podem orientar e mentorar outros membros da equipe, compartilhando lições aprendidas e impulsionando a excelência técnica.",
+            "allowComments": true,
+            "cover": {
+              "data": null
+            },
+            "categories": {
+              "data": [
+                {
+                  "attributes": {
+                    "displayName": "desenvolvimento",
+                    "slug": "desenvolvimento"
+                  }
+                }
+              ]
+            },
+            "tags": {
+              "data": [
+                {
+                  "attributes": {
+                    "displayName": "Recursos humanos",
+                    "slug": "tag-recursos-humanos"
+                  }
+                }
+              ]
+            },
+            "author": {
+              "data": {
+                "attributes": {
+                  "displayName": "Patricia",
+                  "slug": "patricia"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

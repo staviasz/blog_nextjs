@@ -7,15 +7,15 @@ export interface Theme {
 
 export const theme: Theme = {
   colors: {
-    primaryColor: '#0A1128',
-    secondaryColor: '#dc143c',
-    white: '#FFFFFF',
-    mediumGray: '#DDDDDD',
+    primary: '#000',
+    secondary: '#dc143c',
+    darkText: '#333',
+    white: '#FFF',
+    mediumGray: '#DDD',
   },
   font: {
     family: {
       default: "'Open Sans', sans-serif",
-      secondary: "'Montserrat', sans-serif;",
     },
     sizes: {
       small: '1.4rem',
