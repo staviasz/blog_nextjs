@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { Theme } from './theme';
+import { Theme, theme } from './theme';
 
 export const GlobalStyles = createGlobalStyle<Theme>`
   * {
@@ -17,6 +17,7 @@ export const GlobalStyles = createGlobalStyle<Theme>`
     font-size: 1.6rem;
     font-family: ${({ theme }) => theme.font.family.default};
     color: ${({ theme }) => theme.colors.darkText};
+    padding: ${theme.spacings.medium};
   }
 
   h1, h2, h3, h4, h5, h6 {
