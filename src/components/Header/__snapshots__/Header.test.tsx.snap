@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should match snapshot 1`] = `
+.c2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.c6 {
+  font-size: 2.4rem;
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+.c4 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c4 >img {
+  max-height: 3rem;
+}
+
+.c0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6.4rem;
+  width: 100%;
+  max-width: 96rem;
+  color: #333;
+  font-size: 1.4rem;
+  margin: 0 auto;
+}
+
+.c0 .c1 {
+  margin: 0 0 calc(1.4rem - 1rem);
+}
+
+.c0 .c3 >img {
+  max-height: 100%;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+
+.c5 {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 3.2rem;
+  max-width: 48rem;
+}
+
+<div>
+   
+  <header
+    class="c0"
+  >
+    <h1
+      class="c1 c2"
+    >
+      <a
+        href="/"
+      >
+        <a
+          class="c3 c4"
+          target="_self"
+        >
+          <img
+            alt="Erick Staviasz - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+            src="https://imgs.search.brave.com/pVeJ4EDO0HlOGRt1gy91c4KgTDGgiK4RFmqMz-zIQAs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWM1LmRlcG9zaXRw/aG90b3MuY29tLzEw/MDYzNTQvNDEyL2kv/NjAwL2RlcG9zaXRw/aG90b3NfNDEyNTY1/Ny1zdG9jay1waG90/by1pbnRlcm5ldC10/ZWNobm9sb2d5Lmpw/Zw"
+          />
+        </a>
+      </a>
+    </h1>
+    <div
+      class="c5"
+    >
+      <h2
+        class="c1 c6"
+      >
+        Erick Staviasz
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+      </p>
+    </div>
+  </header>
+   
+</div>
+`;

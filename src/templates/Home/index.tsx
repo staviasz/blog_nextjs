@@ -1,5 +1,5 @@
-import { TextContent } from '@/components/Text';
 import { Heading } from '../../components/Heading';
+import { TextContent } from '../../components/Text';
 import { mock } from '../../components/Text/mockHtml';
 import { Wrapper } from './styles';
 

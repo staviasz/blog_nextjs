@@ -7,7 +7,7 @@ export interface LogoLinkProps {
   text: string;
   link: string;
   srcImage?: string;
-  newTab: boolean;
+  newTab?: boolean;
 }
 export const LogoLink = ({
   text,

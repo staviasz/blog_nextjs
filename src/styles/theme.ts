@@ -3,6 +3,7 @@ export interface Theme {
   font: { [key: string]: { [key: string]: string } };
   media: { [key: string]: string };
   spacings: { [key: string]: string };
+  sizes: { [key: string]: string };
 }
 
 export const theme: Theme = {
@@ -12,6 +13,7 @@ export const theme: Theme = {
     darkText: '#333',
     white: '#FFF',
     mediumGray: '#DDD',
+    darkerGray: '#AAAAAA',
   },
   font: {
     family: {
@@ -43,5 +45,9 @@ export const theme: Theme = {
     xxlarge: '4.8rem',
     huge: '5.6rem',
     xhuge: '6.4rem',
+  },
+  sizes: {
+    max: '96rem',
+    content: '80rem',
   },
 };
