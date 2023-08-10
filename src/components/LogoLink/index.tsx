@@ -20,11 +20,9 @@ export const LogoLink = ({
   if (nextLink) {
     return (
       <Heading size="small" uppercase="uppercase">
-        <Link href={link} passHref>
-          <LinkContent target={target}>
-            {!!srcImage && <img src={srcImage} alt={text} />}
-            {!srcImage && text}
-          </LinkContent>
+        <Link href={link} target={target}>
+          {!!srcImage && <img src={srcImage} alt={text} />}
+          {!srcImage && text}
         </Link>
       </Heading>
     );

@@ -7,21 +7,10 @@ exports[`<Header /> should match snapshot 1`] = `
   font-style: italic;
 }
 
-.c6 {
+.c4 {
   font-size: 2.4rem;
   text-transform: lowercase;
   font-style: italic;
-}
-
-.c4 {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-}
-
-.c4 >img {
-  max-height: 3rem;
 }
 
 .c0 {
@@ -40,14 +29,14 @@ exports[`<Header /> should match snapshot 1`] = `
   margin: 0 0 calc(1.4rem - 1rem);
 }
 
-.c0 .c3 >img {
+.c0 .c1 img {
   max-height: 100%;
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
 }
 
-.c5 {
+.c3 {
   display: flex;
   flex-flow: column wrap;
   margin-left: 3.2rem;
@@ -64,23 +53,19 @@ exports[`<Header /> should match snapshot 1`] = `
     >
       <a
         href="/"
+        target="_self"
       >
-        <a
-          class="c3 c4"
-          target="_self"
-        >
-          <img
-            alt="Erick Staviasz - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
-            src="https://imgs.search.brave.com/pVeJ4EDO0HlOGRt1gy91c4KgTDGgiK4RFmqMz-zIQAs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWM1LmRlcG9zaXRw/aG90b3MuY29tLzEw/MDYzNTQvNDEyL2kv/NjAwL2RlcG9zaXRw/aG90b3NfNDEyNTY1/Ny1zdG9jay1waG90/by1pbnRlcm5ldC10/ZWNobm9sb2d5Lmpw/Zw"
-          />
-        </a>
+        <img
+          alt="Erick Staviasz - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+          src="https://imgs.search.brave.com/pVeJ4EDO0HlOGRt1gy91c4KgTDGgiK4RFmqMz-zIQAs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWM1LmRlcG9zaXRw/aG90b3MuY29tLzEw/MDYzNTQvNDEyL2kv/NjAwL2RlcG9zaXRw/aG90b3NfNDEyNTY1/Ny1zdG9jay1waG90/by1pbnRlcm5ldC10/ZWNobm9sb2d5Lmpw/Zw"
+        />
       </a>
     </h1>
     <div
-      class="c5"
+      class="c3"
     >
       <h2
-        class="c1 c6"
+        class="c1 c4"
       >
         Erick Staviasz
       </h2>

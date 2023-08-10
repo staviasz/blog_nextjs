@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
 import { Title as HeadingStyles } from '../Heading/styles';
-import { LinkContent } from '../LogoLink/styles';
 
 export const Container = styled.header`
   ${({ theme }) => css`
@@ -15,9 +14,7 @@ export const Container = styled.header`
     margin: 0 auto;
     ${HeadingStyles} {
       margin: 0 0 calc(${theme.spacings.small} - 1rem);
-    }
-    ${LinkContent} {
-      > img {
+      img {
         max-height: 100%;
         width: 12rem;
         height: 12rem;
