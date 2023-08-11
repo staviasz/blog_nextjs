@@ -5,7 +5,7 @@ import mock from './mockArticleMeta';
 interface ArgsProps extends ArticleMetaProps {}
 
 export default {
-  title: 'ArticleMeta',
+  title: 'Components/ArticleMeta',
   component: ArticleMeta,
   args: mock,
   argTypes: {

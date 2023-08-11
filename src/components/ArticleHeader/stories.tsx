@@ -3,7 +3,7 @@ import { ArticleHeader, ArticleHeaderProps } from '.';
 import mock from './mockArticleHeader';
 
 export default {
-  title: 'ArticleHeader',
+  title: 'Components/ArticleHeader',
   component: ArticleHeader,
   args: mock,
 };

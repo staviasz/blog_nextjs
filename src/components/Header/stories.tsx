@@ -4,7 +4,7 @@ import { Header, HeaderProps } from '.';
 import mock from './mockHeader';
 
 export default {
-  title: 'Header',
+  title: 'Components/Header',
   component: Header,
   args: mock,
 } as Meta<HeaderProps>;
