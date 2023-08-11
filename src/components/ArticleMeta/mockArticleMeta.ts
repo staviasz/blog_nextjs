@@ -8,10 +8,12 @@ export default {
   },
   categories: [
     {
+      id: 'id23',
       slug: 'tech',
       displayName: 'Tech',
     },
     {
+      id: 'id24',
       slug: 'javascript',
       displayName: 'JS',
     },

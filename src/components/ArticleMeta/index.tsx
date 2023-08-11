@@ -1,4 +1,4 @@
-import { MetaData } from '../../metaData';
+import { MetaData } from '../../share-type/metaData';
 import { formatDate } from '../../utils/formatDate';
 import { Container } from './styles';
 

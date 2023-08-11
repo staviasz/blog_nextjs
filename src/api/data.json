@@ -26,6 +26,7 @@
         {
           "id": "1",
           "attributes": {
+            "createdAt": "2023-08-10",
             "slug": "desenvolvimento-web",
             "title": "desenvolvimento web",
             "excerpt": "As varias areas de desenvolvimento web",
@@ -85,6 +86,7 @@
         {
           "id": "2",
           "attributes": {
+            "createdAt": "2023-08-10",
             "slug": "senioridade",
             "title": "Junior, pleno e senior",
             "excerpt": "Senioridade em desenvolvimento de sofware junior, pleno e senior",
