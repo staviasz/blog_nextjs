@@ -38,8 +38,8 @@ describe('<Menu />', () => {
     fireEvent.click(buttonLink);
 
     expect(screen.queryByLabelText('Close menu')).not.toBeInTheDocument();
-    expect(screen.queryByRole('navigation')).not.toBeInTheDocument();
     expect(screen.getByLabelText('Open menu')).toBeInTheDocument();
+    expect(screen.queryByRole('navigation')).not.toBeInTheDocument();
   });
 
   it('should match snapshot', () => {

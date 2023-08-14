@@ -1,10 +1,26 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { MetaData } from '../../share-type/metaData';
+import { StrapiImage } from '../../share-type/strapi-image';
 import mapAuthor from './mapAuthor';
 import mapCategories from './mapCategories';
 import mapCover from './mapCover';
 import mapTags from './mapTags';
 
-const mapPosts = (postData: any) => {
+interface PostsProps {
+  id: string;
+  createdAt: string;
+  title: string;
+  slug: string;
+  excerpt: string;
+  content: string;
+  allowComments: boolean;
+  cover: StrapiImage;
+  categories: MetaData[];
+  tags: MetaData[];
+  author: MetaData;
+}
+
+const mapPosts = (postData: any): PostsProps[] => {
   const { data } = postData;
   return data.map((item: any) => {
     const {

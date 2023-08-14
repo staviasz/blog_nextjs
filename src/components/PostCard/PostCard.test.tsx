@@ -11,8 +11,6 @@ const props: PostCardProps = post;
 
 describe('<PostCard />', () => {
   it('should render a heading, cover and excerpt', () => {
-    console.log(post);
-
     renderTheme(<PostCard {...props} />);
 
     expect(
