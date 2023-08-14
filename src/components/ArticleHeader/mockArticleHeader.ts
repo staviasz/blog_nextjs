@@ -1,25 +1,10 @@
 import { ArticleHeaderProps } from '.';
 import { data } from '../../api/data.json';
-import { authorClean } from '../../utils/mapData/mapAuthor';
-import { categoriesClean } from '../../utils/mapData/mapCategories';
-import { coverClean } from '../../utils/mapData/mapCover';
+import mapPosts from '../../utils/mapData/mapPost';
 
-const { posts } = data;
-const {
-  id,
-  attributes: {
-    title,
-    excerpt,
-    cover: coverData,
-    author: authorData,
-    categories: categoriesData,
-    createdAt,
-  },
-} = posts.data[0];
+const post = mapPosts(data.posts)[0];
 
-const categories = categoriesClean(categoriesData.data);
-const author = authorClean(authorData);
-const cover = coverClean(coverData);
+const { id, title, excerpt, cover, author, categories, createdAt } = post;
 
 export default {
   id,

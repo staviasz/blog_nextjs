@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-interface categoriesDataProps {
+interface tagsDataProps {
   displayName: string;
   slug: string;
 }
 
-const categoriesClean = (categoriesData: any): categoriesDataProps[] => {
-  const { data } = categoriesData;
+const tagsClean = (tagsData: any): tagsDataProps[] => {
+  const { data } = tagsData;
   return data.map((item: any) => {
     const {
       attributes: { displayName, slug },
@@ -17,4 +17,4 @@ const categoriesClean = (categoriesData: any): categoriesDataProps[] => {
   });
 };
 
-export default categoriesClean;
+export default tagsClean;

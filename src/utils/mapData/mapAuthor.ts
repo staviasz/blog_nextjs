@@ -4,9 +4,11 @@ interface authorDataProps {
   };
 }
 
-export const authorClean = (authorData: authorDataProps) => {
+const authorClean = (authorData: authorDataProps) => {
   const {
     attributes: { displayName, slug },
   } = authorData.data;
   return { displayName, slug };
 };
+
+export default authorClean;

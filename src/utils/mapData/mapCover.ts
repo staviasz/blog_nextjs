@@ -5,10 +5,14 @@ interface coverDataProps {
   url: string;
 }
 
-export const coverClean = (coverData: any): coverDataProps => {
-  const {
-    id = '',
-    attributes: { altText = '', url = '' },
-  } = coverData.data;
-  return { id, altText, url };
+const coverClean = (coverData: any): coverDataProps | undefined => {
+  if (coverData.data) {
+    const {
+      id = '',
+      attributes: { altText = '', url = '' },
+    } = coverData.data;
+    return { id, altText, url };
+  }
 };
+
+export default coverClean;

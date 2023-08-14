@@ -1,26 +1,10 @@
 import { PostProps } from '.';
 import { data } from '../../api/data.json';
-import { authorClean } from '../../utils/mapData/mapAuthor';
-import { categoriesClean } from '../../utils/mapData/mapCategories';
-import { coverClean } from '../../utils/mapData/mapCover';
+import mapPosts from '../../utils/mapData/mapPost';
 
-const { posts } = data;
+const post = mapPosts(data.posts)[0];
 
-const {
-  attributes: {
-    title,
-    excerpt,
-    cover: dataCover,
-    content,
-    author: dataAuthor,
-    categories: dataCategories,
-    createdAt,
-  },
-} = posts.data[0];
-
-const cover = coverClean(dataCover);
-const author = authorClean(dataAuthor);
-const categories = categoriesClean(dataCategories.data);
+const { title, excerpt, cover, content, author, categories, createdAt } = post;
 
 export default {
   title,
