@@ -1,14 +1,17 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 interface authorDataProps {
-  data: {
-    attributes: { displayName: string; slug: string };
-  };
+  displayName: string;
+  slug: string;
 }
 
-const authorClean = (authorData: authorDataProps) => {
-  const {
-    attributes: { displayName, slug },
-  } = authorData.data;
-  return { displayName, slug };
+const authorClean = (authorData: any): authorDataProps | undefined => {
+  const { data } = authorData;
+  if (data !== null) {
+    const {
+      attributes: { displayName, slug },
+    } = data;
+    return { displayName, slug };
+  }
 };
 
 export default authorClean;

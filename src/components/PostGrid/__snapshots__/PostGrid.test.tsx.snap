@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<PostGrid /> should match snapshot 1`] = `
-.c5 {
+.c4 {
   font-size: 2.4rem;
   text-transform: lowercase;
   font-style: italic;
 }
 
-.c2 .c4 {
+.c2 .c3 {
   margin: 0;
   margin-top: calc(1.4rem - 0.6rem);
   margin-bottom: 1.4rem;
@@ -27,7 +27,7 @@ exports[`<PostGrid /> should match snapshot 1`] = `
   opacity: 0.8;
 }
 
-.c3 {
+.c5 {
   max-width: 100%;
   transition: opacity 300ms ease-in-out;
 }
@@ -62,44 +62,8 @@ exports[`<PostGrid /> should match snapshot 1`] = `
       <div
         class="c2"
       >
-        <a
-          href="/post/desenvolvimento-web"
-        >
-          <img
-            alt="desenvolvimento web"
-            class="c3"
-            src="https://res.cloudinary.com/drko8mcj9/image/upload/v1691449461/photo_1498050108023_c5249f4df085_df84325049.webp"
-          />
-        </a>
         <h2
-          class="c4 c5"
-        >
-          <a
-            href="/post/desenvolvimento-web"
-          >
-            desenvolvimento web
-          </a>
-        </h2>
-        <p
-          class=""
-        >
-          As varias areas de desenvolvimento web
-        </p>
-      </div>
-      <div
-        class="c2"
-      >
-        <a
-          href="/post/senioridade"
-        >
-          <img
-            alt="Junior, pleno e senior"
-            class="c3"
-            src="https://res.cloudinary.com/drko8mcj9/image/upload/v1691449461/photo_1498050108023_c5249f4df085_df84325049.webp"
-          />
-        </a>
-        <h2
-          class="c4 c5"
+          class="c3 c4"
         >
           <a
             href="/post/senioridade"
@@ -111,6 +75,33 @@ exports[`<PostGrid /> should match snapshot 1`] = `
           class=""
         >
           Senioridade em desenvolvimento de sofware junior, pleno e senior
+        </p>
+      </div>
+      <div
+        class="c2"
+      >
+        <a
+          href="/post/desenvolvimento-web"
+        >
+          <img
+            alt="desenvolvimento web"
+            class="c5"
+            src="https://res.cloudinary.com/drko8mcj9/image/upload/v1691449461/photo_1498050108023_c5249f4df085_df84325049.webp"
+          />
+        </a>
+        <h2
+          class="c3 c4"
+        >
+          <a
+            href="/post/desenvolvimento-web"
+          >
+            desenvolvimento web
+          </a>
+        </h2>
+        <p
+          class=""
+        >
+          As varias areas de desenvolvimento web
         </p>
       </div>
     </div>

@@ -6,7 +6,7 @@ import mock from './mock';
 const posts = mapPosts(mock);
 
 export default {
-  title: 'PostGrid',
+  title: 'Components/PostGrid',
   component: PostGrid,
   args: {
     posts: posts.map(({ id, title, cover, excerpt, slug }) => {

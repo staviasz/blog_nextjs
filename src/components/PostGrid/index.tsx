@@ -1,8 +1,9 @@
-import { PostCard, PostCardProps } from '../PostCard';
+import { postCardProps } from '../../share-type/post-card';
+import { PostCard } from '../PostCard';
 import { Container, Grid, NotFound } from './styles';
 
 export type PostGridProps = {
-  posts?: PostCardProps[];
+  posts?: postCardProps[];
 };
 
 export const PostGrid = ({ posts = [] }: PostGridProps) => {

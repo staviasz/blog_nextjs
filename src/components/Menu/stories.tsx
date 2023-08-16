@@ -3,7 +3,7 @@ import { Menu, MenuProps } from '.';
 import mock from './mockMenu';
 
 export default {
-  title: 'Menu',
+  title: 'Components/Menu',
   component: Menu,
   args: mock,
   parameters: {

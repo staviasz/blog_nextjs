@@ -6,7 +6,7 @@ import mock from './mock';
 const post = mapPosts(mock)[0];
 
 export default {
-  title: 'PostCard',
+  title: 'Components/PostCard',
   component: PostCard,
   args: post,
 };

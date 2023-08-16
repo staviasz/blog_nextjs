@@ -5,22 +5,22 @@ import { renderTheme } from '../../styles/render-theme';
 import mapPosts from '../../utils/mapData/mapPost';
 import mock from './mock';
 
-const post = mapPosts(mock)[0];
-
-const props: PostCardProps = post;
+const post = mapPosts(mock)[1];
+const { posts } = post;
+const props: PostCardProps = posts;
 
 describe('<PostCard />', () => {
   it('should render a heading, cover and excerpt', () => {
     renderTheme(<PostCard {...props} />);
 
     expect(
-      screen.getByRole('heading', { name: post.title }),
+      screen.getByRole('heading', { name: posts.title }),
     ).toBeInTheDocument();
-    expect(screen.getByRole('img', { name: post.title })).toBeInTheDocument();
+    expect(screen.getByRole('img', { name: posts.title })).toBeInTheDocument();
     expect(
-      screen.getAllByRole('link', { name: post.title })[0],
-    ).toHaveAttribute('href', `/post/${post.slug}`);
-    expect(screen.getByText(post.excerpt)).toBeInTheDocument();
+      screen.getAllByRole('link', { name: posts.title })[0],
+    ).toHaveAttribute('href', `/post/${posts.slug}`);
+    expect(screen.getByText(posts.excerpt)).toBeInTheDocument();
   });
 
   it('should match snapshot', () => {

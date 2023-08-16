@@ -1,24 +1,20 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { MetaData } from '../../share-type/metaData';
-import { StrapiImage } from '../../share-type/strapi-image';
+import { postCardProps } from '../../share-type/post-card';
 import mapAuthor from './mapAuthor';
 import mapCategories from './mapCategories';
 import mapCover from './mapCover';
 import mapTags from './mapTags';
 
-interface PostsProps {
-  id: string;
+export type PostsProps = {
+  posts: postCardProps[];
   createdAt: string;
-  title: string;
-  slug: string;
-  excerpt: string;
   content: string;
   allowComments: boolean;
-  cover: StrapiImage;
   categories: MetaData[];
   tags: MetaData[];
   author: MetaData;
-}
+};
 
 const mapPosts = (postData: any): PostsProps[] => {
   const { data } = postData;
@@ -39,14 +35,16 @@ const mapPosts = (postData: any): PostsProps[] => {
       },
     } = item;
     return {
-      id,
-      createdAt,
-      title,
-      slug,
-      excerpt,
+      posts: {
+        id,
+        title,
+        slug,
+        cover: mapCover(cover),
+        excerpt,
+      },
       content,
+      createdAt,
       allowComments,
-      cover: mapCover(cover),
       categories: mapCategories(categories),
       tags: mapTags(tags),
       author: mapAuthor(author),

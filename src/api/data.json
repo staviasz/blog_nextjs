@@ -7,7 +7,15 @@
           "blogName": "Tecnologia",
           "blogDescription": "tecnologia em geral",
           "logo": {
-            "data": []
+            "data": [
+              {
+                "id": "4",
+                "attributes": {
+                  "altText": null,
+                  "url": "https://res.cloudinary.com/drko8mcj9/image/upload/v1691590342/desenvolvimento_web_73903_164_e1eaca8f8a.webp"
+                }
+              }
+            ]
           },
           "menuLink": [
             {
@@ -24,9 +32,51 @@
     "posts": {
       "data": [
         {
+          "id": "2",
+          "attributes": {
+            "createdAt": "2023-08-07T23:24:53.046Z",
+            "slug": "senioridade",
+            "title": "Junior, pleno e senior",
+            "excerpt": "Senioridade em desenvolvimento de sofware junior, pleno e senior",
+            "content": "Desenvolvedor Júnior:\n\nOs desenvolvedores juniores estão nos estágios iniciais de suas carreiras e têm um conhecimento básico das tecnologias e ferramentas relevantes para o desenvolvimento de sistemas.\nEles geralmente trabalham em tarefas mais simples e supervisionadas, como implementar funcionalidades específicas ou corrigir bugs.\nOs desenvolvedores juniores precisam estar dispostos a aprender e aprimorar suas habilidades constantemente, já que estão construindo sua base técnica e experiência profissional.\nEm geral, eles contribuem para projetos maiores como membros da equipe, sob a orientação de desenvolvedores mais experientes.\nDesenvolvedor Pleno:\n\nOs desenvolvedores plenos têm mais experiência e habilidades consolidadas em comparação com os juniores.\nEles são capazes de trabalhar em projetos mais complexos com menos supervisão e têm um entendimento mais profundo das tecnologias usadas.\nDesenvolvedores plenos frequentemente participam da definição da arquitetura do software, tomam decisões técnicas e ajudam a resolver desafios técnicos.\nEles podem desempenhar um papel importante na orientação de desenvolvedores juniores, compartilhando conhecimentos e melhores práticas.\nDesenvolvedor Sênior:\n\n![desenvolvendo-programador-desenvolvimento-web-design-e-codificacao-de-tecnologias_18497-1090.webp](https://res.cloudinary.com/drko8mcj9/image/upload/v1691590342/desenvolvendo_programador_desenvolvimento_web_design_e_codificacao_de_tecnologias_18497_1090_7e7c270125.webp)\n\nOs desenvolvedores seniores têm um nível avançado de experiência e conhecimento técnico, geralmente acumulados ao longo de vários anos de prática.\nEles são capazes de liderar projetos, definir arquiteturas robustas e tomar decisões críticas sobre design e tecnologia.\nDesenvolvedores seniores frequentemente são consultados para resolver problemas complexos e têm a capacidade de encontrar soluções criativas e eficientes.\nEles podem orientar e mentorar outros membros da equipe, compartilhando lições aprendidas e impulsionando a excelência técnica.",
+            "allowComments": true,
+            "cover": {
+              "data": null
+            },
+            "categories": {
+              "data": [
+                {
+                  "attributes": {
+                    "displayName": "desenvolvimento",
+                    "slug": "desenvolvimento"
+                  }
+                }
+              ]
+            },
+            "tags": {
+              "data": [
+                {
+                  "attributes": {
+                    "displayName": "Recursos humanos",
+                    "slug": "tag-recursos-humanos"
+                  }
+                }
+              ]
+            },
+            "author": {
+              "data": {
+                "attributes": {
+                  "displayName": "Patricia",
+                  "slug": "patricia"
+                }
+              }
+            }
+          }
+        },
+        {
           "id": "1",
           "attributes": {
-            "createdAt": "2023-08-10",
+            "createdAt": "2023-08-07T23:09:26.208Z",
             "slug": "desenvolvimento-web",
             "title": "desenvolvimento web",
             "excerpt": "As varias areas de desenvolvimento web",
@@ -78,54 +128,6 @@
                 "attributes": {
                   "displayName": "Erick Staviasz",
                   "slug": "erick-staviasz"
-                }
-              }
-            }
-          }
-        },
-        {
-          "id": "2",
-          "attributes": {
-            "createdAt": "2023-08-10",
-            "slug": "senioridade",
-            "title": "Junior, pleno e senior",
-            "excerpt": "Senioridade em desenvolvimento de sofware junior, pleno e senior",
-            "content": "Desenvolvedor Júnior:\n\nOs desenvolvedores juniores estão nos estágios iniciais de suas carreiras e têm um conhecimento básico das tecnologias e ferramentas relevantes para o desenvolvimento de sistemas.\nEles geralmente trabalham em tarefas mais simples e supervisionadas, como implementar funcionalidades específicas ou corrigir bugs.\nOs desenvolvedores juniores precisam estar dispostos a aprender e aprimorar suas habilidades constantemente, já que estão construindo sua base técnica e experiência profissional.\nEm geral, eles contribuem para projetos maiores como membros da equipe, sob a orientação de desenvolvedores mais experientes.\nDesenvolvedor Pleno:\n\nOs desenvolvedores plenos têm mais experiência e habilidades consolidadas em comparação com os juniores.\nEles são capazes de trabalhar em projetos mais complexos com menos supervisão e têm um entendimento mais profundo das tecnologias usadas.\nDesenvolvedores plenos frequentemente participam da definição da arquitetura do software, tomam decisões técnicas e ajudam a resolver desafios técnicos.\nEles podem desempenhar um papel importante na orientação de desenvolvedores juniores, compartilhando conhecimentos e melhores práticas.\nDesenvolvedor Sênior:\n\nOs desenvolvedores seniores têm um nível avançado de experiência e conhecimento técnico, geralmente acumulados ao longo de vários anos de prática.\nEles são capazes de liderar projetos, definir arquiteturas robustas e tomar decisões críticas sobre design e tecnologia.\nDesenvolvedores seniores frequentemente são consultados para resolver problemas complexos e têm a capacidade de encontrar soluções criativas e eficientes.\nEles podem orientar e mentorar outros membros da equipe, compartilhando lições aprendidas e impulsionando a excelência técnica.",
-            "allowComments": true,
-            "cover": {
-              "data": {
-                "id": "2",
-                "attributes": {
-                  "altText": "algo",
-                  "url": "https://res.cloudinary.com/drko8mcj9/image/upload/v1691449461/photo_1498050108023_c5249f4df085_df84325049.webp"
-                }
-              }
-            },
-            "categories": {
-              "data": [
-                {
-                  "attributes": {
-                    "displayName": "desenvolvimento",
-                    "slug": "desenvolvimento"
-                  }
-                }
-              ]
-            },
-            "tags": {
-              "data": [
-                {
-                  "attributes": {
-                    "displayName": "Recursos humanos",
-                    "slug": "tag-recursos-humanos"
-                  }
-                }
-              ]
-            },
-            "author": {
-              "data": {
-                "attributes": {
-                  "displayName": "Patricia",
-                  "slug": "patricia"
                 }
               }
             }

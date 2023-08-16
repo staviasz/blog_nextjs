@@ -4,17 +4,21 @@ interface categoriesDataProps {
   slug: string;
 }
 
-const categoriesClean = (categoriesData: any): categoriesDataProps[] => {
+const categoriesClean = (
+  categoriesData: any,
+): categoriesDataProps[] | undefined => {
   const { data } = categoriesData;
-  return data.map((item: any) => {
-    const {
-      attributes: { displayName, slug },
-    } = item;
-    return {
-      displayName,
-      slug,
-    };
-  });
+  if (data !== null) {
+    return data.map((item: any) => {
+      const {
+        attributes: { displayName, slug },
+      } = item;
+      return {
+        displayName,
+        slug,
+      };
+    });
+  }
 };
 
 export default categoriesClean;

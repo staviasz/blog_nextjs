@@ -34,7 +34,7 @@ export const decorators = [
   (Story: StoryType) => (
     <ThemeProvider theme={theme}>
       <Story />
-      <GlobalStyles colors={{}} font={{}} media={{}} spacings={{}} />
+      <GlobalStyles colors={{}} font={{}} media={{}} spacings={{}} sizes={{}} />
     </ThemeProvider>
   ),
 ];

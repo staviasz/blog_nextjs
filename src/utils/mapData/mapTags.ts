@@ -4,17 +4,19 @@ interface tagsDataProps {
   slug: string;
 }
 
-const tagsClean = (tagsData: any): tagsDataProps[] => {
+const tagsClean = (tagsData: any): tagsDataProps[] | undefined => {
   const { data } = tagsData;
-  return data.map((item: any) => {
-    const {
-      attributes: { displayName, slug },
-    } = item;
-    return {
-      displayName,
-      slug,
-    };
-  });
+  if (data !== null) {
+    return data.map((item: any) => {
+      const {
+        attributes: { displayName, slug },
+      } = item;
+      return {
+        displayName,
+        slug,
+      };
+    });
+  }
 };
 
 export default tagsClean;

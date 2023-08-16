@@ -14,11 +14,13 @@ export type PostCardProps = {
 export const PostCard = ({ title, cover, excerpt, slug }: PostCardProps) => {
   return (
     <Container>
-      <Link href={`/post/${slug}`} legacyBehavior>
-        <a>
-          <Cover src={cover.url} alt={title} />
-        </a>
-      </Link>
+      {typeof cover !== 'undefined' && (
+        <Link href={`/post/${slug}`} legacyBehavior>
+          <a>
+            <Cover src={cover.url} alt={title} />
+          </a>
+        </Link>
+      )}
 
       <Heading as="h2" size="small">
         <Link href={`/post/${slug}`} legacyBehavior>
