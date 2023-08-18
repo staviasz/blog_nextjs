@@ -1,10 +1,11 @@
-import mapPosts from "./mapPost"
-import { mapSettings } from "./mapSettings"
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import mapPosts from './mapPost';
+import { mapSettings } from './mapSettings';
 
-export const mapResponse = (response = []) => {
-  const { setting, posts } = response[0]
+export const mapResponse = (response: any) => {
+  const { setting, posts } = response;
   return {
     setting: mapSettings(setting),
-    posts: mapPosts(posts)
-  }
-}
+    posts: mapPosts(posts),
+  };
+};

@@ -1,4 +1,5 @@
 import { postCardProps } from '../../share-type/post-card';
+import { randomKey } from '../../utils/randomKey';
 import { PostCard } from '../PostCard';
 import { Container, Grid, NotFound } from './styles';
 
@@ -15,7 +16,7 @@ export const PostGrid = ({ posts = [] }: PostGridProps) => {
       <Grid>
         {posts.length > 0 &&
           posts.map((post) => (
-            <PostCard key={`post-card-${post.id}`} {...post} />
+            <PostCard key={`post-card-${randomKey('post')}`} {...post} />
           ))}
       </Grid>
     </Container>

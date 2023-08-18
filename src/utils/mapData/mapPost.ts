@@ -7,7 +7,7 @@ import mapCover from './mapCover';
 import mapTags from './mapTags';
 
 export type PostsProps = {
-  posts: postCardProps[];
+  posts: postCardProps;
   createdAt: string;
   content: string;
   allowComments: boolean;
@@ -16,7 +16,7 @@ export type PostsProps = {
   author: MetaData;
 };
 
-const mapPosts = (postData: any): PostsProps[] => {
+export const mapPosts = (postData: any): PostsProps[] => {
   const { data } = postData;
   return data.map((item: any) => {
     const {

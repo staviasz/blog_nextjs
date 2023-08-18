@@ -1,16 +1,25 @@
-import { mapLogoSettings } from './logoSettings'
-import { mapMenuSettings } from './menuSettings'
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { mapLogoSettings } from './logoSettings';
+import { mapMenuSettings } from './menuSettings';
 
 export const mapSettings = (settings: any) => {
-  const { data } = settings
-  const {id ='', attributes: {blogName = '', blogDescription ='', logo = '', menuLink = [], footerText = '' } = ''} = data
+  const { data } = settings;
+  const {
+    id = '',
+    attributes: {
+      blogName = '',
+      blogDescription = '',
+      logo = '',
+      menuLink = [],
+      footerText = '',
+    } = '',
+  } = data;
   return {
     id,
     blogName,
     blogDescription,
-    logo: mapLogoSettings(logo),
+    cover: mapLogoSettings(logo),
     menuLink: mapMenuSettings(menuLink),
-    footerText
-  }
-}
+    footerText,
+  };
+};

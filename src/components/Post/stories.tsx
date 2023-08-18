@@ -1,4 +1,4 @@
-import { Post, PostProps } from '.';
+import { Post, Props } from '.';
 
 import mock from './mockPost';
 
@@ -8,7 +8,7 @@ export default {
   args: mock,
 };
 
-export const Template = (args: PostProps) => {
+export const Template = (args: Props) => {
   return (
     <div>
       <Post {...args} />

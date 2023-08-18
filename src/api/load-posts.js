@@ -51,10 +51,11 @@ exports.loadPosts = void 0;
 var graphql_request_1 = require("graphql-request");
 var url_config_1 = require("../config/url-config");
 var query_1 = require("../graphql/query");
+var mapResponse_1 = require("../utils/mapData/mapResponse");
 var loadPosts = function (variables) {
     if (variables === void 0) { variables = {}; }
     return __awaiter(void 0, void 0, void 0, function () {
-        var defaultVariables, response;
+        var defaultVariables, response, data;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -66,12 +67,8 @@ var loadPosts = function (variables) {
                     return [4 /*yield*/, (0, graphql_request_1.request)(url_config_1.default.graphqlURL, query_1.GRAPHQL_QUERIES, __assign(__assign({}, defaultVariables), variables))];
                 case 1:
                     response = _a.sent();
-                    // if (response) {
-                    //   const {data} =
-                    //   const Settings = mapSettings(data.settings)
-                    //   const posts = mapSettings(data.posts)
-                    // }
-                    return [2 /*return*/, [response]];
+                    data = (0, mapResponse_1.mapResponse)(response);
+                    return [2 /*return*/, data];
             }
         });
     });
@@ -86,7 +83,7 @@ exports.loadPosts = loadPosts;
                 return [4 /*yield*/, (0, exports.loadPosts)()];
             case 1:
                 result = _a.sent();
-                console.log(result[0]);
+                console.log(result);
                 return [3 /*break*/, 3];
             case 2:
                 error_1 = _a.sent();

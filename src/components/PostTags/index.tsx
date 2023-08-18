@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { MetaData } from '../../share-type/metaData';
+import { randomKey } from '../../utils/randomKey';
 import { Container } from './styles';
 
 export type PostTagsProps = {
@@ -16,7 +17,7 @@ export const PostTags = ({ tags = [] }: PostTagsProps) => {
       tags:
       {tags.map((tag) => {
         return (
-          <span key={tag.id}>
+          <span key={randomKey(tag.slug)}>
             <Link href={`/tag/${tag.slug}`} legacyBehavior>
               <a>{tag.displayName}</a>
             </Link>

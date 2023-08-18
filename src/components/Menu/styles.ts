@@ -2,23 +2,23 @@ import styled, { css, DefaultTheme } from 'styled-components';
 import { Title as HeadingStyles } from '../Heading/styles';
 
 type MenuBehaviorProps = {
-  menuVisible: boolean;
+  $menuvisible: string;
 };
 
 const ContainerChanger = (
-  menuVisible: MenuBehaviorProps['menuVisible'],
+  menuvisible: MenuBehaviorProps['$menuvisible'],
   theme: DefaultTheme,
 ) => css`
-  left: ${menuVisible ? '0' : '-30rem'};
-  overflow-y: ${menuVisible ? 'auto' : 'hidden'};
+  left: ${menuvisible === 'open' ? '0' : '-30rem'};
+  overflow-y: ${menuvisible === 'open' ? 'auto' : 'hidden'};
 
   @media ${theme.media.lteMedium} {
-    left: ${menuVisible ? '0' : '-32rem'};
+    left: ${menuvisible === 'open' ? '0' : '-32rem'};
   }
 `;
 
 export const Container = styled.div<MenuBehaviorProps>`
-  ${({ theme, menuVisible }) => css`
+  ${({ theme, $menuvisible }) => css`
     background: ${theme.colors.primary};
     padding: ${theme.spacings.large};
     display: flex;
@@ -31,7 +31,7 @@ export const Container = styled.div<MenuBehaviorProps>`
     left: 0;
     transition: all 300ms ease-in-out;
     overflow-y: auto;
-    ${ContainerChanger(menuVisible, theme)}
+    ${ContainerChanger($menuvisible, theme)}
 
     img {
       width: calc(${theme.spacings.xhuge} * 3);
@@ -62,19 +62,19 @@ export const Logo = styled.div`
 `;
 
 const buttonChanger = (
-  menuVisible: MenuBehaviorProps['menuVisible'],
+  menuvisible: MenuBehaviorProps['$menuvisible'],
   theme: DefaultTheme,
 ) => css`
-  left: ${menuVisible ? '26rem' : '1rem'};
-  color: ${menuVisible ? theme.colors.secondary : theme.colors.white};
+  left: ${menuvisible ? '26rem' : '1rem'};
+  color: ${menuvisible ? theme.colors.secondary : theme.colors.white};
 
   @media ${theme.media.lteMedium} {
-    left: ${menuVisible ? '26rem' : '-0.5rem'};
+    left: ${menuvisible ? '26rem' : '-0.5rem'};
   }
 `;
 
 export const OpenClose = styled.a<MenuBehaviorProps>`
-  ${({ theme, menuVisible }) => css`
+  ${({ theme, $menuvisible }) => css`
     position: fixed;
     top: ${theme.spacings.medium};
     color: ${theme.colors.white};
@@ -84,6 +84,6 @@ export const OpenClose = styled.a<MenuBehaviorProps>`
     height: 3rem;
     left: 26rem;
     transition: all 300ms ease-in-out;
-    ${buttonChanger(menuVisible, theme)}
+    ${buttonChanger($menuvisible, theme)}
   `}
 `;

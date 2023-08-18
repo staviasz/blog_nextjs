@@ -2,11 +2,7 @@
 import { postCardProps } from '../../share-type/post-card';
 import mapCover from './mapCover';
 
-export interface mapPostsCardProps {
-  posts: postCardProps[];
-}
-
-export const mapPostsCard = (postData: any): mapPostsCardProps => {
+export const mapPostsCard = (postData: any): postCardProps[] => {
   const { data } = postData;
   return data.map((item: any) => {
     const {

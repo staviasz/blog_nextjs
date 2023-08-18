@@ -1,11 +1,11 @@
-import { ArticleMeta, ArticleMetaProps } from '.';
-import mapPosts from '../../utils/mapData/mapPost';
+import { ArticleMeta } from '.';
+import mapPosts, { PostsProps } from '../../utils/mapData/mapPost';
 
 import mock from './mockArticleMeta';
 
 const posts = mapPosts(mock)[0];
 
-interface ArgsProps extends ArticleMetaProps {}
+interface ArgsProps extends PostsProps {}
 
 export default {
   title: 'Components/ArticleMeta',

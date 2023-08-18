@@ -21,7 +21,7 @@ export type MenuProps = {
 export const Menu = ({ links = [], blogName, logo }: MenuProps) => {
   const [menuVisible, setMenuVisible] = useState(false);
 
-  const target = links[0].newTab ? '_blank' : '_self';
+  const target = links[0].newTab;
 
   const handleOpenCloseMenu = (event: React.MouseEvent) => {
     event.preventDefault();
@@ -31,7 +31,7 @@ export const Menu = ({ links = [], blogName, logo }: MenuProps) => {
   return (
     <>
       <OpenClose
-        menuVisible={menuVisible}
+        $menuvisible={menuVisible ? 'open' : ''}
         href="#"
         aria-label="Open or close menu"
         title="Open or close menu"
@@ -41,14 +41,17 @@ export const Menu = ({ links = [], blogName, logo }: MenuProps) => {
         {!menuVisible && <MenuIcon aria-label="Open menu" />}
       </OpenClose>
 
-      <Container menuVisible={menuVisible} aria-hidden={!menuVisible}>
+      <Container
+        $menuvisible={menuVisible ? 'open' : ''}
+        aria-hidden={!menuVisible}
+      >
         <Nav>
           <Logo>
             <LogoLink link="/" text={blogName} srcImage={logo} />
           </Logo>
 
           {links.map((link) => (
-            <MLink key={link.id} href={link.link} target={target}>
+            <MLink key={link.id} href={link.link} newTab={target}>
               {link.text}
             </MLink>
           ))}

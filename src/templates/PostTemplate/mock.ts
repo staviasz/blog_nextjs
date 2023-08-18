@@ -1,7 +1,10 @@
 import { PostTemplateProps } from '.';
-import { data } from '../../api/dados.json';
+import json from '../../api/data.json';
+import mapPosts from '../../utils/mapData/mapPost';
+import { mapSettings } from '../../utils/mapData/mapSettings';
 
+const { data } = json;
 export default {
-  settings: data.setting,
-  post: data.posts[0],
+  settings: mapSettings(data.setting),
+  post: mapPosts(data.posts)[0],
 } as PostTemplateProps;

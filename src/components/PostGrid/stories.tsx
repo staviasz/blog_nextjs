@@ -1,18 +1,15 @@
 import { PostGrid, PostGridProps } from '.';
-import mapPosts from '../../utils/mapData/mapPost';
+import { mapPostsCard } from '../../utils/mapData/mapPostCard';
 
 import mock from './mock';
 
-const posts = mapPosts(mock);
+const postsData = mapPostsCard(mock);
+const props: PostGridProps = { posts: postsData };
 
 export default {
   title: 'Components/PostGrid',
   component: PostGrid,
-  args: {
-    posts: posts.map(({ id, title, cover, excerpt, slug }) => {
-      return { id, title, cover, excerpt, slug };
-    }),
-  },
+  args: props,
   parameters: {
     layout: 'fullscreen',
   },
@@ -21,8 +18,6 @@ export default {
 export const Template = (args: PostGridProps) => {
   return (
     <div>
-      {/* {console.log('aqui', args)} */}
-
       <PostGrid {...args} />
     </div>
   );

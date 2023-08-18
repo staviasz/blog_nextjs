@@ -1,37 +1,22 @@
-import { MetaData } from '../../share-type/metaData';
-import { StrapiImage } from '../../share-type/strapi-image';
+/* eslint-disable react/prop-types */
+import { PostsProps } from '../../utils/mapData/mapPost';
 import { ArticleMeta } from '../ArticleMeta';
 import { Heading } from '../Heading';
 import { Container, Cover, Excerpt } from './styles';
 
-export type ArticleHeaderProps = {
-  id: string;
-  title: string;
-  excerpt: string;
-  cover: StrapiImage;
-  author: MetaData;
-  categories: MetaData[];
-  createdAt: string;
-};
+export type ArticleHeaderProps = PostsProps;
 
-export const ArticleHeader = ({
-  title,
-  excerpt,
-  cover,
-  author,
-  categories,
-  createdAt,
-}: ArticleHeaderProps) => {
+export const ArticleHeader = (props: ArticleHeaderProps) => {
+  const {
+    posts: { title, cover, excerpt },
+  } = props;
+
   return (
     <Container>
       <Heading size="big">{title}</Heading>
       <Excerpt>{excerpt}</Excerpt>
-      <Cover src={cover.url} alt={title} />
-      <ArticleMeta
-        categories={categories}
-        author={author}
-        createdAt={createdAt}
-      />
+      {cover && <Cover src={cover.url} alt={title} />}
+      <ArticleMeta {...props} />
     </Container>
   );
 };

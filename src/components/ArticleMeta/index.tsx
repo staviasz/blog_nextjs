@@ -1,18 +1,13 @@
-import { MetaData } from '../../share-type/metaData';
 import { formatDate } from '../../utils/formatDate';
+import { PostsProps } from '../../utils/mapData/mapPost';
+import { randomKey } from '../../utils/randomKey';
 import { Container } from './styles';
-
-export type ArticleMetaProps = {
-  createdAt: string;
-  author?: MetaData;
-  categories: MetaData[];
-};
 
 export const ArticleMeta = ({
   createdAt,
-  author = undefined,
+  author,
   categories = [],
-}: ArticleMetaProps) => {
+}: PostsProps) => {
   return (
     <Container>
       <p>
@@ -32,7 +27,7 @@ export const ArticleMeta = ({
             <span className="categories">
               {categories.map((category) => {
                 return (
-                  <span key={`article-meta-cat-${category.id}`}>
+                  <span key={`article-meta-cat-${randomKey('category')}`}>
                     <a href={`/category/${category.slug}`}>
                       {category.displayName}
                     </a>

@@ -1,4 +1,3 @@
-import { Meta, Story } from '@storybook/react/types-6-0';
 import { PostTemplate, PostTemplateProps } from '.';
 
 import mock from './mock';
@@ -9,13 +8,10 @@ export default {
   args: mock,
   parameters: {
     layout: 'fullscreen',
-    backgrounds: {
-      default: '',
-    },
   },
-} as Meta<PostTemplateProps>;
+};
 
-export const Template: Story<PostTemplateProps> = (args) => {
+export const Template = (args: PostTemplateProps) => {
   return (
     <div>
       <PostTemplate {...args} />

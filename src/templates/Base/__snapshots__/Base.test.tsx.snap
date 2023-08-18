@@ -1,0 +1,339 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BaseTemplate /> should render base elements 1`] = `
+.c16 {
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.c16 p {
+  margin: 4.0rem 0;
+}
+
+.c16 a {
+  color: #dc143c;
+}
+
+.c16 a:hover {
+  filter: brightness(50%);
+}
+
+.c16 pre {
+  background-color: #000;
+  padding: 2.4rem;
+  font-family: monospace;
+  color: #FFF;
+}
+
+.c16 img {
+  max-width: 100%;
+  padding: 4.8rem 0;
+}
+
+.c14 {
+  border-top: 0.1rem solid #DDD;
+}
+
+.c14 .c15 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0;
+}
+
+.c14 a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c17 {
+  position: fixed;
+  background: #000;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 6;
+}
+
+.c6 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.c11 {
+  font-size: 2.4rem;
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+.c9 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6.4rem;
+  width: 100%;
+  max-width: 96rem;
+  color: #333;
+  font-size: 1.4rem;
+  margin: 0 auto;
+}
+
+.c9 .c5 {
+  margin: 0 0 calc(1.4rem - 1rem);
+}
+
+.c9 .c5 img {
+  max-height: 100%;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+
+.c10 {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 3.2rem;
+  max-width: 48rem;
+}
+
+.c7 {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  margin-bottom: 1.4rem;
+  border-right: 0.5rem solid #000;
+  transition: all 150ms ease-in-out;
+}
+
+.c7:hover {
+  border-right-color: #dc143c;
+  color: #dc143c;
+}
+
+.c2 {
+  background: #000;
+  padding: 3.2rem;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  max-width: 32rem;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 300ms ease-in-out;
+  overflow-y: auto;
+  left: -30rem;
+  overflow-y: hidden;
+}
+
+.c2 img {
+  width: calc(6.4rem * 3);
+  height: calc(6.4rem * 3);
+  border-radius: 50%;
+}
+
+.c3 {
+  margin: auto;
+  width: 100%;
+}
+
+.c4 .c5 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 4.8rem;
+}
+
+.c4 .c5 img {
+  border: 0.5rem solid #dc143c;
+}
+
+.c0 {
+  position: fixed;
+  top: 2.4rem;
+  color: #FFF;
+  background: #000;
+  z-index: 2;
+  width: 3rem;
+  height: 3rem;
+  left: 26rem;
+  transition: all 300ms ease-in-out;
+  left: 1rem;
+  color: #FFF;
+}
+
+.c8 {
+  margin-top: 6.4rem;
+}
+
+.c12 {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 6.4rem;
+}
+
+.c13 {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+@media (max-width: 768px) {
+  .c2 {
+    left: -32rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .c0 {
+    left: -0.5rem;
+  }
+}
+
+<div>
+   
+  <div
+    class=""
+  >
+    <a
+      aria-label="Open or close menu"
+      class="c0"
+      href="#"
+      title="Open or close menu"
+    >
+      <svg
+        aria-hidden="true"
+        aria-label="Open menu"
+        class="c1"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+        />
+      </svg>
+    </a>
+    <div
+      aria-hidden="true"
+      class="c2"
+    >
+      <nav
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <h1
+            class="c5 c6"
+          >
+            <a
+              href="/"
+              target="_self"
+            >
+              <img
+                alt="Tecnologia"
+                src="https://res.cloudinary.com/drko8mcj9/image/upload/v1691590342/desenvolvimento_web_73903_164_e1eaca8f8a.webp"
+              />
+            </a>
+          </h1>
+        </div>
+        <a
+          class="c7"
+          href="#"
+          target="_self"
+        >
+          desenvolvimento web
+        </a>
+      </nav>
+    </div>
+    <div
+      class="c8"
+    >
+      <header
+        class="c9"
+      >
+        <h1
+          class="c5 c6"
+        >
+          <a
+            href="/"
+            target="_self"
+          >
+            <img
+              alt="Tecnologia - tecnologia em geral"
+              src="https://res.cloudinary.com/drko8mcj9/image/upload/v1691590342/desenvolvimento_web_73903_164_e1eaca8f8a.webp"
+            />
+          </a>
+        </h1>
+        <div
+          class="c10"
+        >
+          <h2
+            class="c5 c11"
+          >
+            Tecnologia
+          </h2>
+          <p>
+            tecnologia em geral
+          </p>
+        </div>
+      </header>
+    </div>
+    <div
+      class="c12"
+    >
+      Olá mundo
+    </div>
+    <div
+      class="c13"
+    >
+      <footer
+        class="c14"
+      >
+        <p
+          class="c15 c16"
+        >
+          Projeto criado por Erick Staviasz
+        </p>
+      </footer>
+    </div>
+    <a
+      aria-label="Go to top"
+      class="c17"
+      href="#"
+      title="Go to top"
+    >
+      <svg
+        aria-hidden="true"
+        class="c1"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"
+        />
+      </svg>
+    </a>
+  </div>
+   
+</div>
+`;

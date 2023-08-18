@@ -1,0 +1,548 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostTemplate /> should match snapshot 1`] = `
+.c17 {
+  font-size: 1.4rem;
+  color: #AAAAAA;
+  font-style: italic;
+}
+
+.c17 .categories span::after {
+  content: ', ';
+}
+
+.c17 .categories span:last-child::after {
+  content: '';
+}
+
+.c17 a {
+  color: #dc143c;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+.c17 a:hover {
+  filter: brightness(50%);
+}
+
+.c6 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.c11 {
+  font-size: 2.4rem;
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+.c15 {
+  font-size: 4.0rem;
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+.c14 {
+  padding-bottom: 4.0rem;
+  margin-bottom: 4.0rem;
+  border-bottom: 0.1rem solid #DDD;
+}
+
+.c14 .c5 {
+  margin: 0;
+  margin-bottom: 2.4rem;
+}
+
+.c16 {
+  margin: 2.4rem 0;
+  font-size: 2.4rem;
+}
+
+.c20 {
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.c20 p {
+  margin: 4.0rem 0;
+}
+
+.c20 a {
+  color: #dc143c;
+}
+
+.c20 a:hover {
+  filter: brightness(50%);
+}
+
+.c20 pre {
+  background-color: #000;
+  padding: 2.4rem;
+  font-family: monospace;
+  color: #FFF;
+}
+
+.c20 img {
+  max-width: 100%;
+  padding: 4.8rem 0;
+}
+
+.c13 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.2rem;
+  max-width: 96rem;
+}
+
+.c18 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.2rem;
+  max-width: 80rem;
+}
+
+.c22 {
+  margin: 2.4rem auto;
+  max-width: 80rem;
+  padding: 0 3.2rem 0;
+}
+
+.c22 span {
+  margin: 0 0 0 0.5rem;
+}
+
+.c22 span::before {
+  content: ' ';
+}
+
+.c22 span::after {
+  content: ', ';
+}
+
+.c22 span:last-child::after {
+  content: '';
+}
+
+.c22 a {
+  color: #dc143c;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+.c22 a:hover {
+  filter: brightness(50%);
+}
+
+.c24 {
+  border-top: 0.1rem solid #DDD;
+}
+
+.c24 .c19 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0;
+}
+
+.c24 a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c25 {
+  position: fixed;
+  background: #000;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 6;
+}
+
+.c9 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6.4rem;
+  width: 100%;
+  max-width: 96rem;
+  color: #333;
+  font-size: 1.4rem;
+  margin: 0 auto;
+}
+
+.c9 .c5 {
+  margin: 0 0 calc(1.4rem - 1rem);
+}
+
+.c9 .c5 img {
+  max-height: 100%;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+
+.c10 {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 3.2rem;
+  max-width: 48rem;
+}
+
+.c7 {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  margin-bottom: 1.4rem;
+  border-right: 0.5rem solid #000;
+  transition: all 150ms ease-in-out;
+}
+
+.c7:hover {
+  border-right-color: #dc143c;
+  color: #dc143c;
+}
+
+.c2 {
+  background: #000;
+  padding: 3.2rem;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  max-width: 32rem;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 300ms ease-in-out;
+  overflow-y: auto;
+  left: -30rem;
+  overflow-y: hidden;
+}
+
+.c2 img {
+  width: calc(6.4rem * 3);
+  height: calc(6.4rem * 3);
+  border-radius: 50%;
+}
+
+.c3 {
+  margin: auto;
+  width: 100%;
+}
+
+.c4 .c5 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 4.8rem;
+}
+
+.c4 .c5 img {
+  border: 0.5rem solid #dc143c;
+}
+
+.c0 {
+  position: fixed;
+  top: 2.4rem;
+  color: #FFF;
+  background: #000;
+  z-index: 2;
+  width: 3rem;
+  height: 3rem;
+  left: 26rem;
+  transition: all 300ms ease-in-out;
+  left: 1rem;
+  color: #FFF;
+}
+
+.c8 {
+  margin-top: 6.4rem;
+}
+
+.c12 {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 6.4rem;
+}
+
+.c23 {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
+.c21 {
+  padding: 0 3.2rem;
+}
+
+@media (max-width: 768px) {
+  .c13 {
+    padding: 0 calc(3.2rem / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .c18 {
+    padding: 0 calc(3.2rem / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .c2 {
+    left: -32rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .c0 {
+    left: -0.5rem;
+  }
+}
+
+<div>
+   
+  <div
+    class=""
+  >
+    <a
+      aria-label="Open or close menu"
+      class="c0"
+      href="#"
+      title="Open or close menu"
+    >
+      <svg
+        aria-hidden="true"
+        aria-label="Open menu"
+        class="c1"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+        />
+      </svg>
+    </a>
+    <div
+      aria-hidden="true"
+      class="c2"
+    >
+      <nav
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <h1
+            class="c5 c6"
+          >
+            <a
+              href="/"
+              target="_self"
+            >
+              <img
+                alt="Tecnologia"
+                src="https://res.cloudinary.com/drko8mcj9/image/upload/v1691590342/desenvolvimento_web_73903_164_e1eaca8f8a.webp"
+              />
+            </a>
+          </h1>
+        </div>
+        <a
+          class="c7"
+          href="#"
+          target="_self"
+        >
+          desenvolvimento web
+        </a>
+      </nav>
+    </div>
+    <div
+      class="c8"
+    >
+      <header
+        class="c9"
+      >
+        <h1
+          class="c5 c6"
+        >
+          <a
+            href="/"
+            target="_self"
+          >
+            <img
+              alt="Tecnologia - tecnologia em geral"
+              src="https://res.cloudinary.com/drko8mcj9/image/upload/v1691590342/desenvolvimento_web_73903_164_e1eaca8f8a.webp"
+            />
+          </a>
+        </h1>
+        <div
+          class="c10"
+        >
+          <h2
+            class="c5 c11"
+          >
+            Tecnologia
+          </h2>
+          <p>
+            tecnologia em geral
+          </p>
+        </div>
+      </header>
+    </div>
+    <div
+      class="c12"
+    >
+      <article
+        class="c13"
+      >
+        <header
+          class="c14"
+        >
+          <h1
+            class="c5 c15"
+          >
+            Junior, pleno e senior
+          </h1>
+          <p
+            class="c16"
+          >
+            Senioridade em desenvolvimento de sofware junior, pleno e senior
+          </p>
+          <div
+            class="c17"
+          >
+            <p>
+              <span>
+                Por 
+              </span>
+              <a
+                href="/author/patricia"
+              >
+                Patricia
+              </a>
+              <span
+                class="separator"
+              >
+                 | 
+              </span>
+              <time
+                datetime="2023-08-07T23:24:53.046Z"
+              >
+                7 de ago. de 2023
+              </time>
+              <span
+                class="separator"
+              >
+                 | 
+              </span>
+              <span
+                class="categories"
+              >
+                <span>
+                  <a
+                    href="/category/desenvolvimento"
+                  >
+                    desenvolvimento
+                  </a>
+                </span>
+              </span>
+            </p>
+          </div>
+        </header>
+      </article>
+      <article
+        class="c18"
+      >
+        <p
+          class="c19 c20"
+        >
+          Desenvolvedor Júnior:
+
+Os desenvolvedores juniores estão nos estágios iniciais de suas carreiras e têm um conhecimento básico das tecnologias e ferramentas relevantes para o desenvolvimento de sistemas.
+Eles geralmente trabalham em tarefas mais simples e supervisionadas, como implementar funcionalidades específicas ou corrigir bugs.
+Os desenvolvedores juniores precisam estar dispostos a aprender e aprimorar suas habilidades constantemente, já que estão construindo sua base técnica e experiência profissional.
+Em geral, eles contribuem para projetos maiores como membros da equipe, sob a orientação de desenvolvedores mais experientes.
+Desenvolvedor Pleno:
+
+Os desenvolvedores plenos têm mais experiência e habilidades consolidadas em comparação com os juniores.
+Eles são capazes de trabalhar em projetos mais complexos com menos supervisão e têm um entendimento mais profundo das tecnologias usadas.
+Desenvolvedores plenos frequentemente participam da definição da arquitetura do software, tomam decisões técnicas e ajudam a resolver desafios técnicos.
+Eles podem desempenhar um papel importante na orientação de desenvolvedores juniores, compartilhando conhecimentos e melhores práticas.
+Desenvolvedor Sênior:
+
+![desenvolvendo-programador-desenvolvimento-web-design-e-codificacao-de-tecnologias_18497-1090.webp](https://res.cloudinary.com/drko8mcj9/image/upload/v1691590342/desenvolvendo_programador_desenvolvimento_web_design_e_codificacao_de_tecnologias_18497_1090_7e7c270125.webp)
+
+Os desenvolvedores seniores têm um nível avançado de experiência e conhecimento técnico, geralmente acumulados ao longo de vários anos de prática.
+Eles são capazes de liderar projetos, definir arquiteturas robustas e tomar decisões críticas sobre design e tecnologia.
+Desenvolvedores seniores frequentemente são consultados para resolver problemas complexos e têm a capacidade de encontrar soluções criativas e eficientes.
+Eles podem orientar e mentorar outros membros da equipe, compartilhando lições aprendidas e impulsionando a excelência técnica.
+        </p>
+      </article>
+      <div
+        class="c21"
+      >
+        <p
+          class="c22"
+        >
+          tags:
+          <span>
+            <a
+              href="/tag/tag-recursos-humanos"
+            >
+              Recursos humanos
+            </a>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div
+      class="c23"
+    >
+      <footer
+        class="c24"
+      >
+        <p
+          class="c19 c20"
+        >
+          Projeto criado por Erick Staviasz
+        </p>
+      </footer>
+    </div>
+    <a
+      aria-label="Go to top"
+      class="c25"
+      href="#"
+      title="Go to top"
+    >
+      <svg
+        aria-hidden="true"
+        class="c1"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"
+        />
+      </svg>
+    </a>
+  </div>
+   
+</div>
+`;

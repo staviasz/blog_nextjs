@@ -4,9 +4,10 @@ import { MenuDiv, MenuLink } from './styles';
 interface MLinkProps {
   children: string | React.ReactNode;
   href: string;
-  target?: '_blank' | '_self';
+  newTab?: boolean | string;
 }
-export const MLink = ({ children, href, target = '_self' }: MLinkProps) => {
+export const MLink = ({ children, href, newTab }: MLinkProps) => {
+  const target = newTab ? '_blank' : '_self';
   const nextLink = href.match(/^\//) ? true : false;
   if (nextLink) {
     return (

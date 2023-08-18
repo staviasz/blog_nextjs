@@ -6,11 +6,13 @@ interface coverDataProps {
 }
 
 const coverClean = (coverData: any): coverDataProps | undefined => {
-  if (coverData.data) {
+  const { data } = coverData;
+
+  if (data) {
     const {
       id = '',
       attributes: { altText = '', url = '' },
-    } = coverData.data;
+    } = data;
     return { id, altText, url };
   }
 };

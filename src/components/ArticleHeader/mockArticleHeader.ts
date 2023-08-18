@@ -1,17 +1,17 @@
-import { ArticleHeaderProps } from '.';
-import { data } from '../../api/data.json';
-import mapPosts from '../../utils/mapData/mapPost';
+import json from '../../api/data.json';
+import mapPosts, { PostsProps } from '../../utils/mapData/mapPost';
 
-const post = mapPosts(data.posts)[0];
+const { data } = json;
+const post = mapPosts(data.posts)[1];
 
-const { id, title, excerpt, cover, author, categories, createdAt } = post;
+const { posts, categories, author, createdAt } = post;
+const { id, title, excerpt, cover } = posts;
 
 export default {
-  id,
-  title,
-  excerpt,
-  cover,
+  posts: { id, title, excerpt, cover },
   author,
   categories,
   createdAt,
-} as ArticleHeaderProps;
+} as PostsProps;
+
+// id, title, excerpt, cover, , ,

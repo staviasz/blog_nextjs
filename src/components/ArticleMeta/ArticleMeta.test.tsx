@@ -1,12 +1,12 @@
 import { screen } from '@testing-library/react';
-import { ArticleMeta, ArticleMetaProps } from '.';
+import { ArticleMeta } from '.';
 import { renderTheme } from '../../styles/render-theme';
 
 import mapPosts from '../../utils/mapData/mapPost';
 import mock from './mockArticleMeta';
 
 const posts = mapPosts(mock)[0];
-const props: ArticleMetaProps = posts;
+const props = posts;
 
 describe('<ArticleMeta />', () => {
   it('should render author and category links', () => {

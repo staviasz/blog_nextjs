@@ -5,7 +5,7 @@ export type SettingsStrapi = {
   id: string;
   blogName: string;
   blogDescription: string;
-  logo: StrapiImage;
+  cover: StrapiImage;
   menuLink: MenuPropsLinks[];
-  text: string;
+  footerText: string;
 };

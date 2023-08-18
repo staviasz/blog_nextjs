@@ -3,12 +3,13 @@ import mapPosts from '../../utils/mapData/mapPost';
 
 import mock from './mock';
 
-const post = mapPosts(mock)[0];
+const post = mapPosts(mock)[1];
+const { posts } = post;
 
 export default {
   title: 'Components/PostCard',
   component: PostCard,
-  args: post,
+  args: posts,
 };
 
 export const Template = (args: PostCardProps) => {

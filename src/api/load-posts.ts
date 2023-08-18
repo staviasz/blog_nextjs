@@ -1,8 +1,9 @@
 import { request } from 'graphql-request';
 import config from '../config/url-config';
 import { GRAPHQL_QUERIES } from '../graphql/query';
-import { PostStrapi } from '../share-type/post-strapi';
 import { SettingsStrapi } from '../share-type/settings-strapi';
+import { PostsProps } from '../utils/mapData/mapPost';
+import { mapResponse } from '../utils/mapData/mapResponse';
 
 export type LoadPostsVariables = {
   categorySlug?: string;
@@ -17,42 +18,32 @@ export type LoadPostsVariables = {
 
 export type StrapiPostAndSettings = {
   setting: SettingsStrapi;
-  posts: PostStrapi[];
+  posts: PostsProps[];
 };
 
-export const loadPosts = async (variables: LoadPostsVariables = {}): Promise<any[]> => {
+export const loadPosts = async (
+  variables: LoadPostsVariables = {},
+): Promise<StrapiPostAndSettings> => {
   const defaultVariables: LoadPostsVariables = {
     sort: 'createdAt:desc',
     start: 0,
     limit: 10,
   };
 
-  try {
-    const response = await request(config.graphqlURL, GRAPHQL_QUERIES, {
+  const response = await request(config.graphqlURL, GRAPHQL_QUERIES, {
     ...defaultVariables,
     ...variables,
-    });
-    const {setting, posts} = response[0]
-  } catch (e) {
-    //
-  }
+  });
 
-  if (response) {
-    const Settings = mapSettings(data.settings)
-    const posts = mapSettings(data.posts)
-
-  }
-
-  return [response];
+  const data = mapResponse(response);
+  return data;
 };
 
 (async () => {
   try {
     const result = await loadPosts();
-    console.log(result[0]);
+    console.log(result);
   } catch (error) {
     console.error(error);
   }
 })();
-
-

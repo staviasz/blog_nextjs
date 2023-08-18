@@ -6,7 +6,7 @@ import { Container, Cover, Excerpt } from './styles';
 export type PostCardProps = {
   id: string;
   title: string;
-  cover: StrapiImage;
+  cover?: StrapiImage;
   excerpt: string;
   slug: string;
 };
