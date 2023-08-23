@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { request } from 'graphql-request';
 import config from '../config/url-config';
 import { GRAPHQL_QUERIES } from '../graphql/query';
@@ -42,7 +43,7 @@ export const loadPosts = async (
 (async () => {
   try {
     const result = await loadPosts();
-    console.log(result);
+    // console.log(result);
   } catch (error) {
     console.error(error);
   }

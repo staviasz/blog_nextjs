@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { formatDate } from '../../utils/formatDate';
 import { PostsProps } from '../../utils/mapData/mapPost';
 import { randomKey } from '../../utils/randomKey';
@@ -14,7 +15,9 @@ export const ArticleMeta = ({
         {typeof author !== 'undefined' && (
           <>
             <span>Por </span>
-            <a href={`/author/${author.slug}`}>{author.displayName}</a>
+            <Link href={`/author/${author.slug}`} legacyBehavior>
+              <a>{author.displayName}</a>
+            </Link>
             <span className="separator"> | </span>
           </>
         )}
@@ -28,9 +31,9 @@ export const ArticleMeta = ({
               {categories.map((category) => {
                 return (
                   <span key={`article-meta-cat-${randomKey('category')}`}>
-                    <a href={`/category/${category.slug}`}>
-                      {category.displayName}
-                    </a>
+                    <Link href={`/category/${category.slug}`} legacyBehavior>
+                      <a>{category.displayName}</a>
+                    </Link>
                   </span>
                 );
               })}

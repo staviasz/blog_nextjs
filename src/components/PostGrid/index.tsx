@@ -1,13 +1,15 @@
-import { postCardProps } from '../../share-type/post-card';
+import { PostsProps } from '../../utils/mapData/mapPost';
 import { randomKey } from '../../utils/randomKey';
 import { PostCard } from '../PostCard';
 import { Container, Grid, NotFound } from './styles';
 
 export type PostGridProps = {
-  posts?: postCardProps[];
+  posts?: PostsProps[];
 };
 
 export const PostGrid = ({ posts = [] }: PostGridProps) => {
+  // console.log('index', posts);
+
   return (
     <Container>
       {posts.length === 0 && (

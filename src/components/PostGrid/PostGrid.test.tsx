@@ -2,10 +2,10 @@ import { screen } from '@testing-library/react';
 import { PostGrid, PostGridProps } from '.';
 import { renderTheme } from '../../styles/render-theme';
 
-import { mapPostsCard } from '../../utils/mapData/mapPostCard';
+import { mapPosts } from '../../utils/mapData/mapPost';
 import mock from './mock';
 
-const postsData = mapPostsCard(mock);
+const postsData = mapPosts(mock);
 const props: PostGridProps = { posts: postsData };
 
 describe('<PostGrid />', () => {

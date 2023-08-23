@@ -5,9 +5,8 @@ interface coverDataProps {
   url: string;
 }
 
-const coverClean = (coverData: any): coverDataProps | undefined => {
+const coverClean = (coverData: any): coverDataProps | null => {
   const { data } = coverData;
-
   if (data) {
     const {
       id = '',
@@ -15,6 +14,7 @@ const coverClean = (coverData: any): coverDataProps | undefined => {
     } = data;
     return { id, altText, url };
   }
+  return null;
 };
 
 export default coverClean;

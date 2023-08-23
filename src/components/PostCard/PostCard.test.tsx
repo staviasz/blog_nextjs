@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react';
-import { PostCard, PostCardProps } from '.';
+import { PostCard } from '.';
 import { renderTheme } from '../../styles/render-theme';
 
 import mapPosts from '../../utils/mapData/mapPost';
@@ -7,11 +7,10 @@ import mock from './mock';
 
 const post = mapPosts(mock)[1];
 const { posts } = post;
-const props: PostCardProps = posts;
 
 describe('<PostCard />', () => {
   it('should render a heading, cover and excerpt', () => {
-    renderTheme(<PostCard {...props} />);
+    renderTheme(<PostCard {...post} />);
 
     expect(
       screen.getByRole('heading', { name: posts.title }),
@@ -24,7 +23,7 @@ describe('<PostCard />', () => {
   });
 
   it('should match snapshot', () => {
-    const { container } = renderTheme(<PostCard {...props} />);
+    const { container } = renderTheme(<PostCard {...post} />);
     expect(container).toMatchSnapshot();
   });
 });

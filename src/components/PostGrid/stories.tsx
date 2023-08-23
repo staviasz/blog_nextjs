@@ -1,9 +1,9 @@
 import { PostGrid, PostGridProps } from '.';
-import { mapPostsCard } from '../../utils/mapData/mapPostCard';
+import { mapPosts } from '../../utils/mapData/mapPost';
 
 import mock from './mock';
 
-const postsData = mapPostsCard(mock);
+const postsData = mapPosts(mock);
 const props: PostGridProps = { posts: postsData };
 
 export default {

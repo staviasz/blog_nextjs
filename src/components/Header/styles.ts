@@ -20,6 +20,13 @@ export const Container = styled.header`
         height: 12rem;
         border-radius: 50%;
       }
+      @media ${theme.media.lteSmall} {
+        display: flex;
+        flex-flow: column wrap;
+        & > ${HeadingStyles} {
+          margin: 0 0 ${theme.spacings.medium} 0;
+        }
+      }
     }
   `}
 `;
@@ -30,5 +37,9 @@ export const Content = styled.div`
     flex-flow: column wrap;
     margin-left: ${theme.spacings.large};
     max-width: 48rem;
+
+    @media ${theme.media.lteSmall} {
+      margin-left: 0;
+    }
   `}
 `;

@@ -301,6 +301,23 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
   }
 }
 
+@media (max-width: 500px) {
+  .c9 .c5 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .c9 .c5>.c5 {
+    margin: 0 0 2.4rem 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .c10 {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .c2 {
     left: -32rem;

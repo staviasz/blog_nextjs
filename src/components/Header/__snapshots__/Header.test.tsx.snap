@@ -43,6 +43,23 @@ exports[`<Header /> should match snapshot 1`] = `
   max-width: 48rem;
 }
 
+@media (max-width: 500px) {
+  .c0 .c1 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .c0 .c1>.c1 {
+    margin: 0 0 2.4rem 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .c3 {
+    margin-left: 0;
+  }
+}
+
 <div>
    
   <header
