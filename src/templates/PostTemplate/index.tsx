@@ -1,3 +1,4 @@
+import { Comments } from '../../components/Comments';
 import { Post } from '../../components/Post';
 import { PostTags } from '../../components/PostTags';
 import { PostStrapi } from '../../share-type/post-strapi';
@@ -11,6 +12,10 @@ export type PostTemplateProps = {
 };
 
 export const PostTemplate = ({ settings, post }: PostTemplateProps) => {
+  const {
+    allowComments,
+    posts: { title, slug, id },
+  } = post;
   return (
     <BaseTemplate settings={settings}>
       <Post {...post} />
@@ -18,6 +23,13 @@ export const PostTemplate = ({ settings, post }: PostTemplateProps) => {
       <TagsContainer>
         <PostTags tags={post.tags} />
       </TagsContainer>
+
+      <Comments
+        title={title}
+        slug={slug}
+        id={id}
+        allowComments={allowComments}
+      />
     </BaseTemplate>
   );
 };

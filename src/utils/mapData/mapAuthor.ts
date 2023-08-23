@@ -4,14 +4,13 @@ interface authorDataProps {
   slug: string;
 }
 
-const authorClean = (authorData: any): authorDataProps | undefined => {
+const authorClean = (authorData: any): authorDataProps | null => {
   const { data } = authorData;
-  if (data !== null) {
-    const {
-      attributes: { displayName, slug },
-    } = data;
-    return { displayName, slug };
-  }
+  if (data === null) return null;
+  const {
+    attributes: { displayName, slug },
+  } = data;
+  return { displayName, slug };
 };
 
 export default authorClean;

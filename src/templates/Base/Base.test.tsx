@@ -6,6 +6,15 @@ import { mock } from './mock';
 
 const props: BaseTemplateProps = mock;
 
+jest.mock('next/router', () => ({
+  useRouter: () => ({
+    push: jest.fn(),
+    replace: jest.fn(),
+    prefetch: jest.fn(),
+    query: { q: 'search query' },
+  }),
+}));
+
 describe('<BaseTemplate />', () => {
   it('should render base elements', () => {
     renderTheme(<BaseTemplate {...props} />);

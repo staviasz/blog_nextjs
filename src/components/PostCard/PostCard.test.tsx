@@ -18,7 +18,7 @@ describe('<PostCard />', () => {
     expect(screen.getByRole('img', { name: posts.title })).toBeInTheDocument();
     expect(
       screen.getAllByRole('link', { name: posts.title })[0],
-    ).toHaveAttribute('href', `/post/${posts.slug}`);
+    ).toHaveAttribute('href', `/${posts.slug}`);
     expect(screen.getByText(posts.excerpt)).toBeInTheDocument();
   });
 

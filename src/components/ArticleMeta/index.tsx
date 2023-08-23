@@ -12,7 +12,7 @@ export const ArticleMeta = ({
   return (
     <Container>
       <p>
-        {typeof author !== 'undefined' && (
+        {author && (
           <>
             <span>Por </span>
             <Link href={`/author/${author.slug}`} legacyBehavior>

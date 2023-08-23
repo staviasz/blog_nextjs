@@ -8,7 +8,7 @@ import {
 } from '../../api/load-posts';
 import { PostsTemplate } from '../../templates/PostsTemplate';
 
-export default function AuthorPage({
+export default function CategoryPage({
   posts,
   setting,
   variables,
@@ -21,7 +21,7 @@ export default function AuthorPage({
     <>
       <Head>
         <title>
-          Author: {posts[0].author.displayName} - {setting.blogName}
+          Author: {posts[0].categories[0].displayName} - {setting.blogName}
         </title>
       </Head>
 
@@ -49,7 +49,9 @@ export const getStaticProps: GetStaticProps<StrapiPostAndSettings> = async (
   const variables = { authorSlug: ctx.params.slug as string };
 
   try {
-    data = await loadPosts(variables);
+    if (ctx.params) {
+      data = await loadPosts({ categorySlug: ctx.params.slug as string });
+    }
   } catch (e) {
     data = null;
   }
@@ -69,7 +71,6 @@ export const getStaticProps: GetStaticProps<StrapiPostAndSettings> = async (
         ...variables,
       },
     },
-
     revalidate: 24 * 60 * 60,
   };
 };

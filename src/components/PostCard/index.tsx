@@ -9,7 +9,7 @@ export const PostCard = ({
   return (
     <Container>
       {cover !== null && (
-        <Link href={`/post/${slug}`} legacyBehavior>
+        <Link href={`/${slug}`} legacyBehavior>
           <a>
             <Cover src={cover.url} alt={title} />
           </a>
@@ -17,7 +17,7 @@ export const PostCard = ({
       )}
 
       <Heading as="h2" size="small">
-        <Link href={`/post/${slug}`} legacyBehavior>
+        <Link href={`/${slug}`} legacyBehavior>
           <a>{title}</a>
         </Link>
       </Heading>

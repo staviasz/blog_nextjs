@@ -5,6 +5,15 @@ import mock from './mock';
 
 const props: PostsTemplateProps = mock;
 
+jest.mock('next/router', () => ({
+  useRouter: () => ({
+    push: jest.fn(),
+    replace: jest.fn(),
+    prefetch: jest.fn(),
+    query: { q: '' },
+  }),
+}));
+
 describe('<PostsTemplate />', () => {
   it('should match snapshot', () => {
     const { container } = renderTheme(<PostsTemplate {...props} />);

@@ -1,4 +1,5 @@
 export interface Theme {
+  name: string;
   colors: { [key: string]: string };
   font: { [key: string]: { [key: string]: string } };
   media: { [key: string]: string };
@@ -7,6 +8,7 @@ export interface Theme {
 }
 
 export const theme: Theme = {
+  name: 'default',
   colors: {
     primary: '#000',
     secondary: '#dc143c',

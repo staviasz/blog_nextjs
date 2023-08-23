@@ -1,60 +1,55 @@
-import { GetStaticPaths, GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
 import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
 import {
-  StrapiPostAndSettings,
   defaultLoadPostsVariables,
   loadPosts,
+  StrapiPostAndSettings,
 } from '../../api/load-posts';
 import { PostsTemplate } from '../../templates/PostsTemplate';
 
-export default function AuthorPage({
+export default function SearchPage({
   posts,
   setting,
   variables,
 }: StrapiPostAndSettings) {
   const router = useRouter();
-  if (router.isFallback) {
-    return <h1>Loading...</h1>;
-  }
+
   return (
     <>
       <Head>
         <title>
-          Author: {posts[0].author.displayName} - {setting.blogName}
+          Pesquisa: {router.query.q} - {setting.blogName}
         </title>
       </Head>
-
       <PostsTemplate posts={posts} settings={setting} variables={variables} />
     </>
   );
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: true,
-  };
-};
+export const getServerSideProps: GetServerSideProps<
+  StrapiPostAndSettings
+> = async (ctx) => {
+  let data = null;
+  const query = ctx.query.q || '';
+  console.log('query', query);
 
-export const getStaticProps: GetStaticProps<StrapiPostAndSettings> = async (
-  ctx,
-) => {
-  if (!ctx.params)
+  if (!query) {
     return {
       notFound: true,
     };
+  }
 
-  let data = null;
-  const variables = { authorSlug: ctx.params.slug as string };
+  const variables = { postSearch: query as string };
 
   try {
     data = await loadPosts(variables);
   } catch (e) {
     data = null;
   }
+  console.log('data', data);
 
-  if (!data || !data.posts || !data.posts.length) {
+  if (!data || !data.posts) {
     return {
       notFound: true,
     };
@@ -69,7 +64,5 @@ export const getStaticProps: GetStaticProps<StrapiPostAndSettings> = async (
         ...variables,
       },
     },
-
-    revalidate: 24 * 60 * 60,
   };
 };

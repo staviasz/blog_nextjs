@@ -20,31 +20,23 @@ export type LoadPostsVariables = {
 export type StrapiPostAndSettings = {
   setting: SettingsStrapi;
   posts: PostsProps[];
+  variables?: LoadPostsVariables;
+};
+
+export const defaultLoadPostsVariables: LoadPostsVariables = {
+  sort: 'createdAt:desc',
+  start: 0,
+  limit: 2,
 };
 
 export const loadPosts = async (
   variables: LoadPostsVariables = {},
 ): Promise<StrapiPostAndSettings> => {
-  const defaultVariables: LoadPostsVariables = {
-    sort: 'createdAt:desc',
-    start: 0,
-    limit: 10,
-  };
-
   const response = await request(config.graphqlURL, GRAPHQL_QUERIES, {
-    ...defaultVariables,
+    ...defaultLoadPostsVariables,
     ...variables,
   });
 
   const data = mapResponse(response);
   return data;
 };
-
-(async () => {
-  try {
-    const result = await loadPosts();
-    // console.log(result);
-  } catch (error) {
-    console.error(error);
-  }
-})();

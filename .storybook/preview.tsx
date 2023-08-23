@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react';
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import { BlogThemeProvider } from '../src/contexts/BlogThemeContext';
 import { GlobalStyles } from '../src/styles/global-styles';
 import { theme } from '../src/styles/theme';
 
@@ -32,10 +32,10 @@ const preview: Preview = {
 type StoryType = () => JSX.Element;
 export const decorators = [
   (Story: StoryType) => (
-    <ThemeProvider theme={theme}>
+    <BlogThemeProvider >
       <Story />
-      <GlobalStyles colors={{}} font={{}} media={{}} spacings={{}} sizes={{}} />
-    </ThemeProvider>
+      <GlobalStyles colors={{}} font={{}} media={{}} spacings={{}} sizes={{}} name={''} />
+    </BlogThemeProvider>
   ),
 ];
 

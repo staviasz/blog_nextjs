@@ -1,7 +1,7 @@
-import { PostProps } from '../components/Post';
+import { PostsProps } from '../utils/mapData/mapPost';
 import { MetaData } from './metaData';
 
-export type PostStrapi = PostProps & {
+export type PostStrapi = PostsProps & {
   tags: MetaData[];
   slug: string;
   allowComments: boolean;

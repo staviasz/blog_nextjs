@@ -21,7 +21,7 @@ export default function AuthorPage({
     <>
       <Head>
         <title>
-          Author: {posts[0].author.displayName} - {setting.blogName}
+          Author: {posts[0].tags[0].displayName} - {setting.blogName}
         </title>
       </Head>
 
@@ -49,7 +49,9 @@ export const getStaticProps: GetStaticProps<StrapiPostAndSettings> = async (
   const variables = { authorSlug: ctx.params.slug as string };
 
   try {
-    data = await loadPosts(variables);
+    if (ctx.params) {
+      data = await loadPosts({ tagSlug: ctx.params.slug as string });
+    }
   } catch (e) {
     data = null;
   }
