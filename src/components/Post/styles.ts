@@ -18,7 +18,7 @@ export const PostContainer = styled.article<PostContainerProps>`
   ${({ theme, size }) => css`
     width: 100%;
     margin: 0 auto;
-    padding: ${theme.spacings.large};
+    padding: ${theme.spacings.xxsmall} ${theme.spacings.large};
     ${postContainerStyles[size](theme)}
 
     @media ${theme.media.lteMedium} {

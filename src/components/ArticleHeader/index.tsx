@@ -13,7 +13,9 @@ export const ArticleHeader = (props: ArticleHeaderProps) => {
 
   return (
     <Container>
-      <Heading size="big">{title}</Heading>
+      <Heading size="big" uppercase="capitalize" as="h2">
+        {title}
+      </Heading>
       <Excerpt>{excerpt}</Excerpt>
       {cover && <Cover src={cover.url} alt={title} />}
       <ArticleMeta {...props} />

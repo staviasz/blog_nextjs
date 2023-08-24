@@ -22,7 +22,7 @@ export const FooterContainer = styled.div`
     max-width: 120rem;
     width: 100%;
     margin: 0 auto;
-    padding: ${theme.spacings.large};
+    padding: ${theme.spacings.medium};
   `}
 `;
 

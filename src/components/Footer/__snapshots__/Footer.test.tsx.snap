@@ -28,10 +28,13 @@ exports[`<Footer/> should render 1`] = `
 .c2 img {
   max-width: 100%;
   padding: 4.8rem 0;
+  display: block;
+  margin: 0 auto;
 }
 
 .c0 {
   border-top: 0.1rem solid #DDD;
+  padding-top: 2.4rem;
 }
 
 .c0 .c1 {

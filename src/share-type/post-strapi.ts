@@ -3,6 +3,5 @@ import { MetaData } from './metaData';
 
 export type PostStrapi = PostsProps & {
   tags: MetaData[];
-  slug: string;
   allowComments: boolean;
 };

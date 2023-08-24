@@ -28,10 +28,13 @@ exports[`<BaseTemplate /> should render base elements 1`] = `
 .c23 img {
   max-width: 100%;
   padding: 4.8rem 0;
+  display: block;
+  margin: 0 auto;
 }
 
 .c21 {
   border-top: 0.1rem solid #DDD;
+  padding-top: 2.4rem;
 }
 
 .c21 .c22 {
@@ -253,7 +256,7 @@ exports[`<BaseTemplate /> should render base elements 1`] = `
   max-width: 120rem;
   width: 100%;
   margin: 0 auto;
-  padding: 3.2rem;
+  padding: 2.4rem;
 }
 
 .c17 {
@@ -397,11 +400,11 @@ exports[`<BaseTemplate /> should render base elements 1`] = `
         <div
           class="c15"
         >
-          <h2
+          <h1
             class="c10 c16"
           >
             Tecnologia
-          </h2>
+          </h1>
           <p>
             tecnologia em geral
           </p>

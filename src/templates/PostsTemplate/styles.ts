@@ -15,6 +15,7 @@ export const Button = styled.button`
     color: ${theme.colors.white};
     border: none;
     padding: ${theme.spacings.small} ${theme.spacings.large};
+    border-radius: 4px;
     cursor: pointer;
     &:disabled {
       background: ${theme.colors.darkerGray};

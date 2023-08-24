@@ -2,7 +2,6 @@ import { screen } from '@testing-library/react';
 import { ArticleHeader, ArticleHeaderProps } from '.';
 import { renderTheme } from '../../styles/render-theme';
 
-import { formatDate } from '../../utils/formatDate';
 import mock from './mockArticleHeader';
 
 const props: ArticleHeaderProps = mock;
@@ -17,7 +16,6 @@ describe('<ArticleHeader />', () => {
     ).toBeInTheDocument();
     expect(screen.getByRole('img', { name: posts.title })).toBeInTheDocument();
     expect(screen.getByText(posts.excerpt)).toBeInTheDocument();
-    expect(screen.getByText(formatDate(props.createdAt))).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 });

@@ -81,11 +81,11 @@ exports[`<Header /> should match snapshot 1`] = `
     <div
       class="c3"
     >
-      <h2
+      <h1
         class="c1 c4"
       >
         Erick Staviasz
-      </h2>
+      </h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
       </p>

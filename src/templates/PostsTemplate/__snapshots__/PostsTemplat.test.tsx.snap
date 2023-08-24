@@ -13,10 +13,14 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
   font-style: italic;
 }
 
+.c23 {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
 .c22 .c10 {
-  margin: 0;
-  margin-top: calc(1.4rem - 0.6rem);
-  margin-bottom: 1.4rem;
+  margin: calc(1.4rem - 0.6rem) 0;
 }
 
 .c22 a {
@@ -33,9 +37,18 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
   opacity: 0.8;
 }
 
-.c23 {
-  max-width: 100%;
+.c25 {
+  max-width: calc(4.0rem * 10);
+  width: 100%;
+  max-height: calc(1.8rem * 11);
+  height: 100%;
   transition: opacity 300ms ease-in-out;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.c24 {
+  margin: 0;
 }
 
 .c20 {
@@ -51,46 +64,49 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
   padding: 3.2rem;
 }
 
-.c29 {
+.c31 {
   font-size: 1.8rem;
   text-align: left;
 }
 
-.c29 p {
+.c31 p {
   margin: 4.0rem 0;
 }
 
-.c29 a {
+.c31 a {
   color: #dc143c;
 }
 
-.c29 a:hover {
+.c31 a:hover {
   filter: brightness(50%);
 }
 
-.c29 pre {
+.c31 pre {
   background-color: #000;
   padding: 2.4rem;
   font-family: monospace;
   color: #FFF;
 }
 
-.c29 img {
+.c31 img {
   max-width: 100%;
   padding: 4.8rem 0;
+  display: block;
+  margin: 0 auto;
 }
 
-.c27 {
+.c29 {
   border-top: 0.1rem solid #DDD;
+  padding-top: 2.4rem;
 }
 
-.c27 .c28 {
+.c29 .c30 {
   font-size: 1.4rem;
   text-align: center;
   margin: 0;
 }
 
-.c27 a {
+.c29 a {
   color: inherit;
   text-decoration: none;
   font-size: 1.4rem;
@@ -102,7 +118,7 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
   overflow: hidden;
 }
 
-.c30 {
+.c32 {
   position: fixed;
   background: #000;
   color: #FFF;
@@ -287,11 +303,11 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
   margin-bottom: 6.4rem;
 }
 
-.c26 {
+.c28 {
   max-width: 120rem;
   width: 100%;
   margin: 0 auto;
-  padding: 3.2rem;
+  padding: 2.4rem;
 }
 
 .c17 {
@@ -309,22 +325,23 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
   padding: 0.5rem 1.4rem;
 }
 
-.c24 {
+.c26 {
   padding: 0 3.2rem;
   margin: 3.2rem 0;
   display: flex;
   justify-content: center;
 }
 
-.c25 {
+.c27 {
   background: #000;
   color: #FFF;
   border: none;
   padding: 1.4rem 3.2rem;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.c25:disabled {
+.c27:disabled {
   background: #AAAAAA;
 }
 
@@ -460,11 +477,11 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
         <div
           class="c15"
         >
-          <h2
+          <h1
             class="c10 c16"
           >
             Tecnologia
-          </h2>
+          </h1>
           <p>
             tecnologia em geral
           </p>
@@ -500,7 +517,7 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
             class="c22"
           >
             <h2
-              class="c10 c16"
+              class="c10 c23"
             >
               <a
                 href="/senioridade"
@@ -509,7 +526,7 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
               </a>
             </h2>
             <p
-              class=""
+              class="c24"
             >
               Senioridade em desenvolvimento de sofware junior, pleno e senior
             </p>
@@ -522,12 +539,12 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
             >
               <img
                 alt="desenvolvimento web"
-                class="c23"
+                class="c25"
                 src="https://res.cloudinary.com/drko8mcj9/image/upload/v1691449461/photo_1498050108023_c5249f4df085_df84325049.webp"
               />
             </a>
             <h2
-              class="c10 c16"
+              class="c10 c23"
             >
               <a
                 href="/desenvolvimento-web"
@@ -536,7 +553,7 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
               </a>
             </h2>
             <p
-              class=""
+              class="c24"
             >
               As varias areas de desenvolvimento web
             </p>
@@ -544,23 +561,23 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="c24"
+        class="c26"
       >
         <button
-          class="c25"
+          class="c27"
         >
           Carregar mais
         </button>
       </div>
     </div>
     <div
-      class="c26"
+      class="c28"
     >
       <footer
-        class="c27"
+        class="c29"
       >
         <p
-          class="c28 c29"
+          class="c30 c31"
         >
           Projeto criado por Erick Staviasz
         </p>
@@ -568,7 +585,7 @@ exports[`<PostsTemplate /> should match snapshot 1`] = `
     </div>
     <a
       aria-label="Go to top"
-      class="c30"
+      class="c32"
       href="#"
       title="Go to top"
     >
@@ -649,10 +666,13 @@ exports[`<PostsTemplate /> should match snapshot without posts 1`] = `
 .c26 img {
   max-width: 100%;
   padding: 4.8rem 0;
+  display: block;
+  margin: 0 auto;
 }
 
 .c24 {
   border-top: 0.1rem solid #DDD;
+  padding-top: 2.4rem;
 }
 
 .c24 .c25 {
@@ -862,7 +882,7 @@ exports[`<PostsTemplate /> should match snapshot without posts 1`] = `
   max-width: 120rem;
   width: 100%;
   margin: 0 auto;
-  padding: 3.2rem;
+  padding: 2.4rem;
 }
 
 .c17 {
@@ -1012,11 +1032,11 @@ exports[`<PostsTemplate /> should match snapshot without posts 1`] = `
         <div
           class="c15"
         >
-          <h2
+          <h1
             class="c10 c16"
           >
             Tecnologia
-          </h2>
+          </h1>
           <p>
             tecnologia em geral
           </p>

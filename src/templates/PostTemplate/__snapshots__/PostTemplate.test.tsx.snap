@@ -46,7 +46,7 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
 
 .c22 {
   font-size: 4.0rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
   font-style: italic;
 }
 
@@ -59,11 +59,13 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
 .c21 .c10 {
   margin: 0;
   margin-bottom: 2.4rem;
+  text-align: center;
 }
 
 .c23 {
   margin: 2.4rem 0;
   font-size: 2.4rem;
+  text-align: center;
 }
 
 .c27 {
@@ -93,19 +95,21 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
 .c27 img {
   max-width: 100%;
   padding: 4.8rem 0;
+  display: block;
+  margin: 0 auto;
 }
 
 .c20 {
   width: 100%;
   margin: 0 auto;
-  padding: 3.2rem;
+  padding: 1.8rem 3.2rem;
   max-width: 96rem;
 }
 
 .c25 {
   width: 100%;
   margin: 0 auto;
-  padding: 3.2rem;
+  padding: 1.8rem 3.2rem;
   max-width: 80rem;
 }
 
@@ -143,6 +147,7 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
 
 .c32 {
   border-top: 0.1rem solid #DDD;
+  padding-top: 2.4rem;
 }
 
 .c32 .c26 {
@@ -352,7 +357,7 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
   max-width: 120rem;
   width: 100%;
   margin: 0 auto;
-  padding: 3.2rem;
+  padding: 2.4rem;
 }
 
 .c17 {
@@ -512,11 +517,11 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
         <div
           class="c15"
         >
-          <h2
+          <h1
             class="c10 c16"
           >
             Tecnologia
-          </h2>
+          </h1>
           <p>
             tecnologia em geral
           </p>
@@ -548,11 +553,11 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
         <header
           class="c21"
         >
-          <h1
+          <h2
             class="c10 c22"
           >
             Junior, pleno e senior
-          </h1>
+          </h2>
           <p
             class="c23"
           >
@@ -570,16 +575,6 @@ exports[`<PostTemplate /> should match snapshot 1`] = `
               >
                 Patricia
               </a>
-              <span
-                class="separator"
-              >
-                 | 
-              </span>
-              <time
-                datetime="2023-08-07T23:24:53.046Z"
-              >
-                7 de ago. de 2023
-              </time>
               <span
                 class="separator"
               >

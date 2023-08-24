@@ -16,7 +16,7 @@ export const PostCard = ({
         </Link>
       )}
 
-      <Heading as="h2" size="small">
+      <Heading as="h2" size="small" uppercase="capitalize">
         <Link href={`/${slug}`} legacyBehavior>
           <a>{title}</a>
         </Link>

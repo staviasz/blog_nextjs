@@ -25,7 +25,7 @@ export const Header = ({
 
       {showText && (
         <Content>
-          <Heading size="small" as="h2" colordark="dark">
+          <Heading size="small" as="h1" colordark="dark">
             {blogName}
           </Heading>
           <p>{blogDescription}</p>

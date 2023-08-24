@@ -27,6 +27,8 @@ export const Text = styled.p`
     img {
       max-width: 100%;
       padding: ${theme.spacings.xxlarge} 0;
+      display: block;
+      margin: 0 auto;
     }
   `}
 `;

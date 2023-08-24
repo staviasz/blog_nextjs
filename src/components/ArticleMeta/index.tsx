@@ -1,14 +1,10 @@
 import Link from 'next/link';
-import { formatDate } from '../../utils/formatDate';
+// import { formatDate } from '../../utils/formatDate';
 import { PostsProps } from '../../utils/mapData/mapPost';
 import { randomKey } from '../../utils/randomKey';
 import { Container } from './styles';
 
-export const ArticleMeta = ({
-  createdAt,
-  author,
-  categories = [],
-}: PostsProps) => {
+export const ArticleMeta = ({ author, categories = [] }: PostsProps) => {
   return (
     <Container>
       <p>
@@ -21,9 +17,6 @@ export const ArticleMeta = ({
             <span className="separator"> | </span>
           </>
         )}
-
-        <time dateTime={createdAt}>{formatDate(createdAt)}</time>
-        <span className="separator"> | </span>
 
         {categories.length > 0 && (
           <>

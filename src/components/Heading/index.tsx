@@ -5,7 +5,7 @@ interface HeadingProps {
   colordark?: 'light' | 'dark';
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   size?: 'xhuge' | 'big' | 'medium' | 'small';
-  uppercase?: 'uppercase' | 'lowercase';
+  uppercase?: 'uppercase' | 'lowercase' | 'capitalize';
 }
 
 export const Heading = ({

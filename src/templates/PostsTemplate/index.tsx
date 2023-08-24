@@ -25,17 +25,13 @@ export const PostsTemplate = ({
   const handleLoadMorePosts = async () => {
     setButtonDisabled(true);
 
-    const newVariables = () => {
-      if (stateVariables && stateVariables.start && stateVariables.limit) {
-        return {
-          ...stateVariables,
-          start: stateVariables.start + stateVariables.limit,
-          limit: stateVariables.limit,
-        };
-      }
+    const newVariables = {
+      ...stateVariables,
+      start: stateVariables.start + stateVariables.limit,
+      limit: stateVariables.limit,
     };
 
-    const morePosts = await loadPosts(newVariables());
+    const morePosts = await loadPosts(newVariables);
 
     if (!morePosts || !morePosts.posts || !morePosts.posts.length) {
       setNoMorePosts(true);

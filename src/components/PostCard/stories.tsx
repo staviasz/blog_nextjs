@@ -1,5 +1,5 @@
-import { PostCard, PostCardProps } from '.';
-import mapPosts from '../../utils/mapData/mapPost';
+import { PostCard } from '.';
+import mapPosts, { PostsProps } from '../../utils/mapData/mapPost';
 
 import mock from './mock';
 
@@ -12,7 +12,7 @@ export default {
   args: posts,
 };
 
-export const Template = (args: PostCardProps) => {
+export const Template = (args: PostsProps) => {
   return (
     <div style={{ maxWidth: '32rem' }}>
       <PostCard {...args} />

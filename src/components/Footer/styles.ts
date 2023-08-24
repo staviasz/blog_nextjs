@@ -4,6 +4,7 @@ import { Text } from '../Text/styles';
 export const FooterContainer = styled.footer`
   ${({ theme }) => css`
     border-top: 0.1rem solid ${theme.colors.mediumGray};
+    padding-top: ${theme.spacings.medium};
 
     ${Text} {
       font-size: ${theme.font.sizes.small};

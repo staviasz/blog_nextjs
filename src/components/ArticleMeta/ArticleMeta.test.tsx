@@ -21,15 +21,6 @@ describe('<ArticleMeta />', () => {
     ).toHaveAttribute('href', '/category/desenvolvimento');
   });
 
-  it('should format date', () => {
-    renderTheme(<ArticleMeta {...props} />);
-
-    expect(screen.getByText('7 de ago. de 2023')).toHaveAttribute(
-      'datetime',
-      props.createdAt,
-    );
-  });
-
   it('should match snapshot', () => {
     const { container } = renderTheme(<ArticleMeta {...props} />);
     expect(container).toMatchSnapshot();
