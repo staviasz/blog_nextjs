@@ -24,23 +24,26 @@ export const PostsTemplate = ({
 
   const handleLoadMorePosts = async () => {
     setButtonDisabled(true);
-
-    const newVariables = {
-      ...stateVariables,
-      start: stateVariables.start + stateVariables.limit,
-      limit: stateVariables.limit,
-    };
-
-    const morePosts = await loadPosts(newVariables);
-
-    if (!morePosts || !morePosts.posts || !morePosts.posts.length) {
-      setNoMorePosts(true);
+    if (!stateVariables) {
       return;
     }
+    if (stateVariables.start && stateVariables.limit) {
+      const newVariables = {
+        ...stateVariables,
+        start: stateVariables.start + stateVariables.limit,
+        limit: stateVariables.limit,
+      };
+      const morePosts = await loadPosts(newVariables);
 
-    setButtonDisabled(false);
-    setStateVariables(newVariables);
-    setStatePosts((p) => [...p, ...morePosts.posts]);
+      if (!morePosts || !morePosts.posts || !morePosts.posts.length) {
+        setNoMorePosts(true);
+        return;
+      }
+
+      setButtonDisabled(false);
+      setStateVariables(newVariables);
+      setStatePosts((p) => [...p, ...morePosts.posts]);
+    }
   };
 
   return (

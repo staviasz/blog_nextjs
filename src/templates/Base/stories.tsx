@@ -14,7 +14,6 @@ export default {
 export const Template = (args: BaseTemplateProps) => {
   return (
     <div>
-      {console.log(args)}
       <BaseTemplate {...args} />
     </div>
   );
